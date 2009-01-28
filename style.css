@@ -1,0 +1,83 @@
+/*   
+Theme Name: UNICEF Innovations
+Author: Meghana Khandekar, Adam Mckaig
+Version: 0.1
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-size: 100%;
+}
+
+body {
+	font: 9pt sans-serif;
+	line-height: 1;
+	padding: 1em;
+	background: #fff;
+	color: #000;
+}
+
+#page {
+	width: 60em;
+	margin: 0 auto;
+}
+
+	#header {
+		border: 1px solid #ddd;
+		padding: 1.5em 2em 0 2em;
+		background: #eee;
+	}
+	
+		#masthead {
+			height: 2em;
+		}
+
+			#masthead h1 {
+				float: left;
+				font-size: 200%;
+				font-weight: normal;
+				margin-right: 0.5em;
+			}
+	
+				#masthead h1 a {
+					text-decoration: none;
+					color: #888;
+				}
+	
+			#tagline {
+				color: #aaa;
+				line-height: 2;
+				font-family: serif;
+			}
+
+		#nav-tabs {
+			clear: both;
+			padding-top: 1.5em;
+		}
+		
+			#nav-tabs li {
+				display: block;
+				float: left;
+				padding: 1em;
+				border: 1px solid #ddd;
+				
+				/* bump the tabs down one pixel,
+				 * so the border-bottom occupies
+				 * the same line as the border-
+				 * bottom of #header */
+				position: relative;
+				top: 1px;
+			}
+			
+				#nav-tabs li.active {
+					background: #fff;
+				}
+			
+		#nav-links {
+			clear: both;
+		}
+
