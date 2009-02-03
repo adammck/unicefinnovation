@@ -30,7 +30,6 @@ if ( !empty($withcomments) && !is_single() ) {
 </head>
 <body>
 <div id="page">
-
 <div id="header">
 	<div id="masthead">
 		<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
@@ -41,9 +40,9 @@ if ( !empty($withcomments) && !is_single() ) {
 		# manually. we'll iterate this a couple of times to create the nav
 		$pages = get_pages('sort_column=menu_order');
 		
-		# hack: since home is hard-coded, check manually if
-		# it is currently active, to insert the css class
-		#$home_klass = ($post->ID==1) ? ' class="active"' : '';
+		# i have no idea what this variable is for, but it seems to
+		# contain a "1" for the home page, which is just what i need
+		$home_klass = ($wp_query->is_home) ? ' class="active"' : '';
 	?>
 	<ul id="nav-tabs">
 		<li<?php print $home_klass ?>><a href="<?php echo get_option('home'); ?>/">Home</a></li>
@@ -60,6 +59,8 @@ if ( !empty($withcomments) && !is_single() ) {
 			}
 		?>
 	</ul>
+</div>
+<div id="intro">
 	<ul id="nav-links">
 		<?php
 			# list all sub-pages of the page we are

@@ -7,6 +7,7 @@ Version: 0.1
 * {
 	margin: 0;
 	padding: 0;
+	zoom: 1;
 }
 
 h1, h2, h3, h4, h5 {
@@ -28,16 +29,33 @@ body {
 
 	#header {
 		border: 1px solid #ddd;
-		padding: 1.5em 2em 0 2em;
 		background: #eee;
+		position: relative;
+		
+		/*  #masthead h1 = 2em
+		 *  #nav-tabs li = 1em + (1em*2) */
+		/*height: 6em;*/
+		height: 7em;
+		padding-bottom: 1px;
+		
 	}
 	
 		#masthead {
+			padding: 1em;
 			height: 2em;
 		}
-
-			#masthead h1 {
+			
+			/* float everything to make IE6 happy;
+			 * the static #masthead height ensures
+			 * that the container doesn't collapse */
+			#masthead h1,
+			#mathead h1 a,
+			#tagline {
+				display: block;
 				float: left;
+			}
+			
+			#masthead h1 {
 				font-size: 200%;
 				font-weight: normal;
 				margin-right: 0.5em;
@@ -50,13 +68,27 @@ body {
 	
 			#tagline {
 				color: #aaa;
-				line-height: 2;
 				font-family: serif;
+				
+				/* align the baseline of this text with the
+				 * baseline of the H1, via rough offsetting.
+				 * this will go away when we overlay images */
+				padding: 0.85em 0 0.15em 0;
 			}
-
+	
 		#nav-tabs {
-			clear: both;
-			padding-top: 1.5em;
+			position: absolute;
+			display: block;
+			margin-left: 1em;
+			top: 4em;
+			
+			/* left border is disabled in the child LIs
+			 * (to ensure a single pixel boundary), so
+			 * add it here (for the first "tab"), and
+			 * bump the block left to compensate by
+			 * overlapping the container's border */
+			border-left: 1px solid #ddd;
+			left: -1px;
 		}
 		
 			#nav-tabs li {
@@ -64,20 +96,30 @@ body {
 				float: left;
 				padding: 1em;
 				border: 1px solid #ddd;
-				
-				/* bump the tabs down one pixel,
-				 * so the border-bottom occupies
-				 * the same line as the border-
-				 * bottom of #header */
-				position: relative;
-				top: 1px;
+				border-left: 0;
 			}
 			
 				#nav-tabs li.active {
+					border-bottom-color: #fff;
 					background: #fff;
 				}
+					
+					#nav-tabs li a {
+						text-decoration: none;
+						font-weight: bold;
+						color: #000;
+						
+						/* more floating trash for IE6
+						 * (an appropriate mental image) */
+						display: block;
+						float: left;
+					}
+
+	#intro { padding-top: 10em; }
 			
 		#nav-links {
-			clear: both;
 		}
 
+#content {
+	opacity: 0.1;
+}
