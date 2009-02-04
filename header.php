@@ -39,14 +39,8 @@ if ( !empty($withcomments) && !is_single() ) {
 		# fetch all pages created in /wp-admin/edit-pages.php, ordered
 		# manually. we'll iterate this a couple of times to create the nav
 		$pages = get_pages('sort_column=menu_order');
-		
-		# i have no idea what this variable is for, but it seems to
-		# contain a "1" for the home page, which is just what i need
-		$home_klass = ($wp_query->is_home) ? ' class="active"' : '';
 	?>
 	<ul id="nav-tabs">
-		<li<?php print $home_klass ?>><a href="<?php echo get_option('home'); ?>/">Home</a></li>
-		
 		<?php
 			# list all top-level (parentless) pages
 			# as tabs at the top of every page. the
@@ -72,4 +66,38 @@ if ( !empty($withcomments) && !is_single() ) {
 			}
 		?>
 	</ul>
+	
+	<?php
+		# only the home page has these big links to the product pages.
+		# (i see any way implement this without hard-coding the names
+		# of the home page ("home") and parent page ("products") into
+		# the template). seems like hard-coding the ID of the parent
+		# page would be even worse...
+		if ($post->post_name == "home") {
+		 print '<ul id="product-links">';
+		 
+			foreach ($pages as $p) {
+				if (get_post($p->post_parent)->post_name == "products") {
+					print '<li>';
+					print '<h3><a href="' .get_page_link($p->ID). '">'.$p->post_title.'</a></h3>';
+					
+					# if this product page has one or more custom
+					# fields named "summary", dump them here
+					if ($summaries = get_post_meta($p->ID, "summary", false)) {
+						foreach ($summaries as $s) {
+							print '<p>'.$s.'</p>';
+						}
+					}
+					
+					print '<span class="float-hack"></span>';
+					print '</li>';
+					
+				}
+			}
+			
+		 	print '</ul>';
+		}
+	?>
+	
+	<!--<span class="float-hack"></span>-->
 </div>
