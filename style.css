@@ -11,6 +11,7 @@ Version: 0.1
 }
 
 h1, h2, h3, h4, h5 {
+	font-weight: normal;
 	font-size: 100%;
 }
 
@@ -22,7 +23,7 @@ body {
 	color: #000;
 }
 
-#page {
+#wrapper {
 	width: 70em;
 	margin: 0 auto;
 }
@@ -120,11 +121,11 @@ body {
 		border-bottom: 1px dotted #ccc;
 		position: relative;
 		overflow: auto;
-		padding: 1em;
 	}
 			
 		#nav-links {
-			margin: 0 auto;
+			border-bottom: 1px dotted #ccc;
+			line-height: 3;
 			
 			/* the child LIs are inline;
 			 * center them horizontally */
@@ -148,15 +149,41 @@ body {
 					color: #000;
 				}
 
+		#statement {
+			width: 50%;
+			float: left;
+			text-align: center;
+			padding: 1em 0;
+		}
+		
+			#statement h1 {
+				font-size: 200%;
+				margin-bottom: 0.25em;
+			}
+			
+			#statement .p1 {
+				color: #444;
+				font-size: 125%;
+				line-height: 1.4;
+				
+				/* 0, 4, 0.5, 4 @ 100% */
+				margin: 0 3.2em 0.4em 3.2em;
+			}
+			
+			#statement .p2 {
+				line-height: 1.4;
+				margin: 0 2em;
+				color: #888;
+			}
+			
+		
 		#product-links {
 			width: 50%;
 			float: right;
 			
-			/* all child elements have a 1em gap
-			 * at the top (via the h3 m-t), so bump
-			 * the container up 1em to compensate
-			 * for the first row */
-			margin-top: -1em;
+			/* each h3 product link has a 1em margin-
+			 * top, so we don't need padding top here */
+			padding-bottom: 1em;
 		}
 		
 			#product-links li {
@@ -189,13 +216,26 @@ body {
 		 * the LIs will be, or how many */
 		#product-links span.float-hack {
 			overflow: hidden;
-			height: 0;
 			clear: both;
+			height: 0;
 		}
-		
-	#intro span.float-hack {
-	}
 
-#content {
-	opacity: 0.1;
+#footer {
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #eee;
+	font-size: 80%;
+	color: #ccc;
+	
+	/* 1 @ 100% */
+	padding: 1.25em;
 }
+
+	#footer a {
+		color: #888;
+		text-decoration: none;
+	}
+	
+		#footer a:hover {
+			text-decoration: underline;
+		}
