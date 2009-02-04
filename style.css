@@ -196,6 +196,7 @@ body {
 					border-left: 2em solid #f00;
 					margin-bottom: 0.5em;
 					padding-left: 0.5em;
+					font-weight: bold;
 					
 					/* space out the
 					 * LIs vertically */
@@ -220,7 +221,88 @@ body {
 			height: 0;
 		}
 
+
+
+
+#content,
+#sidebar {
+	color: #888;
+	
+	/* the last element will only have a 1em, margin-bottom,
+	 * so we need a bit of extra padding here to compensate */
+	padding-bottom: 1em;
+}
+
+	#content.with-sidebar {
+		float: left;
+		width: 70%;
+	}
+
+	#sidebar {
+		float: right;
+		width: 30%;
+	}
+	
+	#content div.nest,
+	#sidebar div.nest {
+		padding: 0 2em; }
+
+		#sidebar div.nest {
+			padding-left: 0; }
+
+	#content h2,
+	#sidebar h2 {
+		color: #444;
+		font-size: 125%;
+		padding-left: 0.4em;
+		margin: 1.6em 0 0.8em 0;
+		border-left: 1.6em solid #f00;
+	}
+	
+	#content p,
+	#sidebar p {
+		margin: 1em 0;
+		line-height: 1.4;
+	}
+	
+		#content p a,
+		#sidebar p a {
+			color: #888;
+		}
+	
+	/* a short snip of additional information,
+	 * which isn't as important as most paragraphs */
+	#content p.more {
+		font-size: 80%;
+		color: #ccc;
+	}
+	
+		#content p.more a {
+			color: #ccc; }
+	
+	#sidebar ul.partners {
+		margin-left: -0.5em; }
+	
+		#sidebar ul.partners li {
+			display: block;
+			float: left;
+			width: 50%;
+		}
+		
+			#sidebar ul.partners a {
+				border: 1px solid #ccc;
+				margin: 0 0 0.5em 0.5em;
+				padding: 1em;
+				display: block;
+			}
+
+
+
+
+
+
 #footer {
+	clear: both;
 	text-align: center;
 	border: 1px solid #ccc;
 	background: #eee;
