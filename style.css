@@ -161,19 +161,13 @@ body {
 				margin-bottom: 0.25em;
 			}
 			
-			#statement .p1 {
+			#statement p {
 				color: #444;
 				font-size: 125%;
 				line-height: 1.4;
 				
 				/* 0, 4, 0.5, 4 @ 100% */
 				margin: 0 3.2em 0.4em 3.2em;
-			}
-			
-			#statement .p2 {
-				line-height: 1.4;
-				margin: 0 2em;
-				color: #888;
 			}
 			
 		
@@ -216,6 +210,7 @@ body {
 		 * here, since we don't know how high
 		 * the LIs will be, or how many */
 		#product-links span.float-hack {
+			display: block;
 			overflow: hidden;
 			clear: both;
 			height: 0;
@@ -295,6 +290,43 @@ body {
 				padding: 1em;
 				display: block;
 			}
+			
+			/* another float hack; not absolutely
+			 * required, but i'd rather put the
+			 * complexity here than in the html */
+			#sidebar ul.partners span.float-hack {
+				display: block;
+				overflow: hidden;
+				clear: both;
+				height: 0;
+			}
+
+	#sidebar div.feed ul {
+		overflow-y: scroll;
+		height: 25em;
+	}
+	
+		#sidebar div.feed li {
+			padding-right: 1em;
+			display: block;
+		}
+		
+			#sidebar div.feed h3 a {
+				text-decoration: none;
+				font-weight: bold;
+				background: #eee;
+				line-height: 1.4;
+				display: block;
+				padding: 0.5em;
+				color: #444;
+			}
+			
+			#sidebar div.feed li div.date {
+				display: none;
+				font-size: 80%;
+				color: #aaa;
+			}
+	
 
 
 
