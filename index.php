@@ -1,10 +1,10 @@
 <?php require "header.php" ?>
 			<div id="intro">
 				<ul id="nav-links">
-					<li class="active"><a href="">Mobile &amp; SMS</a></li>
+					<li><a href="">Mobile &amp; SMS</a></li>
 					<li class="active"><a href="">Ruggedized Computing</a></li>
-					<li class="active"><a href="">Social Networking</a></li>
-					<li class="active"><a href="">Wiki</a></li>
+					<li><a href="">Social Networking</a></li>
+					<li><a href="">Wiki</a></li>
 				</ul>
 	
 				<div id="statement">
@@ -39,11 +39,11 @@
 			
 			<div id="content" class="with-sidebar">
 				<div class="nest">
-					<h2>About UNICEF</h2>
+					<h2 class="first">About UNICEF</h2>
 					<p>UNICEF is on the ground in over 150 countries and territories to help children survive and thrive, from early childhood through adolescence.  The world's largest provider of vaccines for developing countries, UNICEF supports child health and nutrition, good water and sanitation, quality basic education for all boys and girls, and the protection of children from violence, exploitation, and AIDS. UNICEF is funded entirely by the voluntary contributions of individuals, businesses, foundations and governments.</p>
 					
 					<h2>News &amp; Press</h2>
-					<p>Fusce condimentum pellentesque pede. Pellentesque lacinia velit ac leo. Proin dignissim, urna id ornare faucibus, mauris turpis placerat lorem, at malesuada tortor erat vel quam. Morbi vitae dolor. Vivamus et lacus ut est euismod dictum. Aenean suscipit tortor pellentesque augue. Ut dui. Donec facilisis congue neque. Sed leo. Morbi ultricies molestie justo. Nam ligula lectus, gravida sed, lacinia vitae, sagittis at, urna. Quisque tempor, augue at convallis commodo, dolor leo lacinia neque, sed euismod lorem arcu sed dolor. </p>
+					<p>Fusce condimentum <a href="">pellentesque pede</a>. Pellentesque lacinia velit ac leo. Proin dignissim, urna id ornare faucibus, mauris turpis placerat lorem, at malesuada tortor erat vel quam. Morbi vitae dolor. Vivamus et lacus ut est euismod dictum. Aenean suscipit tortor pellentesque augue. Ut dui. Donec facilisis congue neque. Sed leo. Morbi ultricies molestie justo. Nam ligula lectus, gravida sed, lacinia vitae, sagittis at, urna. Quisque tempor, augue at convallis commodo, dolor leo lacinia neque, sed euismod lorem arcu sed dolor. </p>
 				
 					<h2>Blog</h2>
 					<p>In purus. Mauris suscipit ipsum adipiscing ligula. Duis eu odio eu urna vehicula fringilla. Pellentesque ut eros. Sed sit amet eros. Nulla commodo leo eget elit. Mauris fermentum. Suspendisse sit amet ligula id orci accumsan faucibus. Vestibulum facilisis ante. Vivamus volutpat semper turpis. In suscipit mattis arcu. </p>

@@ -15,9 +15,9 @@
 					<!--<div id="tagline">We build <strong>Awesome Shit</strong> for children</div>-->
 				</div>
 				<ul id="nav-tabs">
-					<li class="active"><a href="/">Home</a></li>
 					<li><a href="/products/">Products</a></li>
 					<li><a href="/about/">About</a></li>
+					<li class="active"><a href="/">Home</a></li>
 				</ul>
 			</div>
 

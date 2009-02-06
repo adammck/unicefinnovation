@@ -24,21 +24,18 @@ body {
 }
 
 #wrapper {
-	width: 70em;
+	width: 80em;
 	margin: 0 auto;
 }
 
 	#header {
-		border: 1px solid #ccc;
-		background: #eee;
+		border: 1px solid #06a1db;
+		background: #87d1ed url("png/masthead.png") no-repeat;
 		position: relative;
 		
-		/*  #masthead h1 = 2em
-		 *  #nav-tabs li = 1em + (1em*2) */
-		/*height: 6em;*/
-		height: 7em;
-		padding-bottom: 1px;
-		
+		/*padding-bottom: 1px;
+		height: 7em;*/
+		height: 112px;
 	}
 	
 		#masthead {
@@ -59,7 +56,7 @@ body {
 			#masthead h1 {
 				font-size: 200%;
 				font-weight: normal;
-				margin-right: 0.5em;
+				text-indent: -9999px;
 			}
 	
 				#masthead h1 a {
@@ -80,24 +77,27 @@ body {
 		#nav-tabs {
 			position: absolute;
 			display: block;
-			margin-left: 1em;
-			top: 4em;
+			margin-right: 1em;
+			right: 0;
+			
+			/* align the bottom of the tabs with the border-bottom
+			 * of the header, so the active tab can overlay it with
+			 * white, giving the illusion of it being "in front" */
+			margin-top: -3em;
+			top: 111px;
 			
 			/* left border is disabled in the child LIs
 			 * (to ensure a single pixel boundary), so
-			 * add it here (for the first "tab"), and
-			 * bump the block left to compensate by
-			 * overlapping the container's border */
-			border-left: 1px solid #ccc;
-			left: -1px;
+			 * add it here (for the first "tab") */
+			border-left: 1px solid #06a1db;
 		}
 		
 			#nav-tabs li {
 				display: block;
-				float: left;
+				float: right;
 				padding: 1em;
-				border: 1px solid #ccc;
-				background: #ddd;
+				border: 1px solid #06a1db;
+				background: #4fa6cc url("png/tab-off-bg.png") repeat-x;
 				border-left: 0;
 			}
 			
@@ -109,13 +109,16 @@ body {
 					#nav-tabs li a {
 						text-decoration: none;
 						font-weight: bold;
-						color: #000;
+						color: #fff;
 						
 						/* more floating trash for IE6
 						 * (an appropriate mental image) */
 						display: block;
 						float: left;
 					}
+					
+					#nav-tabs li.active a {
+						color: #009fdb; }
 
 	#intro {
 		border-bottom: 1px dotted #ccc;
@@ -146,8 +149,12 @@ body {
 				
 				#nav-links li a {
 					text-decoration: none;
-					color: #000;
+					font-weight: bold;
+					color: #68c6eb;
 				}
+				
+				#nav-links li.active a {
+					color: #009fdb; }
 
 		#statement {
 			width: 50%;
@@ -247,11 +254,19 @@ body {
 
 	#content h2,
 	#sidebar h2 {
-		color: #444;
+		color: #4077a2;
 		font-size: 125%;
-		padding-left: 0.4em;
+		font-weight: bold;
+		font-family: serif;
+		padding-top: 1.6em;
 		margin: 1.6em 0 0.8em 0;
-		border-left: 1.6em solid #f00;
+		border-top: 1px dotted #eee;
+	}
+	
+	#content h2:first-child,
+	#sidebar h2:first-child {
+		padding-top: 0;
+		border-top: 0;
 	}
 	
 	#content p,
@@ -262,8 +277,13 @@ body {
 	
 		#content p a,
 		#sidebar p a {
-			color: #888;
+			color: #df5e32;
+			text-decoration: none;
 		}
+		
+			#content p a:hover,
+			#sidebar p a:hover {
+				text-decoration: underline; }
 	
 	/* a short snip of additional information,
 	 * which isn't as important as most paragraphs */
@@ -336,8 +356,8 @@ body {
 #footer {
 	clear: both;
 	text-align: center;
-	border: 1px solid #ccc;
-	background: #eee;
+	border-top: 1px solid #02a0db;
+	background: #e1f4fd;
 	font-size: 80%;
 	color: #ccc;
 	
