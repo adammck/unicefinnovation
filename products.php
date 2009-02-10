@@ -1,5 +1,12 @@
 <?php require "includes/header.php" ?>
 <div id="intro">
+	<ul id="nav-links">
+		<li><a href="">Mobile &amp; SMS</a></li>
+		<li class="active"><a href="">Ruggedized Computing</a></li>
+		<li><a href="">Social Networking</a></li>
+		<li><a href="">Wiki</a></li>
+	</ul>
+
 	<div id="statement">
 		<h1>Defining New Directions in Development</h1>
 		<p class="p1">

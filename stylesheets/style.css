@@ -30,7 +30,7 @@ body {
 
 	#header {
 		border: 1px solid #06a1db;
-		background: #87d1ed url("png/masthead.png") no-repeat;
+		background: #87d1ed url("../images/masthead.png") no-repeat;
 		position: relative;
 		
 		/*padding-bottom: 1px;
@@ -97,7 +97,7 @@ body {
 				float: right;
 				padding: 1em;
 				border: 1px solid #06a1db;
-				background: #4fa6cc url("png/tab-off-bg.png") repeat-x;
+				background: #4fa6cc url("../images/tab-off-bg.png") repeat-x;
 				border-left: 0;
 			}
 			
@@ -121,13 +121,14 @@ body {
 						color: #009fdb; }
 
 	#intro {
-		border-bottom: 1px dotted #ccc;
+		background: #2c2f53;
 		position: relative;
 		overflow: auto;
+		margin-top: 0.5em;
 	}
 			
 		#nav-links {
-			border-bottom: 1px dotted #ccc;
+			background: #fff;
 			line-height: 3;
 			
 			/* the child LIs are inline;
@@ -160,57 +161,83 @@ body {
 			width: 50%;
 			float: left;
 			text-align: center;
-			padding: 1em 0;
-		}
-		
-			#statement h1 {
-				font-size: 200%;
-				margin-bottom: 0.25em;
-			}
 			
+			/* note to potential future employers - this
+			 * absolute pixel positioning stuff is all
+			 * wrong, and i'm doing it under protest */
+			padding: 35px 0;
+			height: 171px; /* <-- bg image height */
+			background: url("../images/statement.png") no-repeat 50% 50%;
+		}
+			
+			/* hide accessible text */
+			#statement h1,
 			#statement p {
-				color: #444;
-				font-size: 125%;
-				line-height: 1.4;
-				
-				/* 0, 4, 0.5, 4 @ 100% */
-				margin: 0 3.2em 0.4em 3.2em;
-			}
+				position: absolute;
+				text-indent: -9999px; }
 			
 		
 		#product-links {
 			width: 50%;
 			float: right;
 			
-			/* each h3 product link has a 1em margin-
-			 * top, so we don't need padding top here */
-			padding-bottom: 1em;
+			/* each h3 product link has a 1.25em margin-
+			 * top (to space them out vertically), but
+			 * we need a 35px gap at the top! begrudgingly
+			 * undo the flexible top and add some pixels...*/
+			margin-top: -1.25em;
+			padding: 35px 0;
 		}
 		
 			#product-links li {
 				display: block;
 				float: left;
 				width: 50%;
+				
+				/* line up icons with text */
+				background-repeat: no-repeat;
+				background-position: 0 1.25em;
 			}
+				
+				/* icons for each of the products on the home page */
+				#product-links li.mobile { background-image:  url("../images/icons/mobile.png"); }
+				#product-links li.bee    { background-image:  url("../images/icons/bee.png");    }
+				#product-links li.social { background-image:  url("../images/icons/social.png"); }
+				#product-links li.wiki   { background-image:  url("../images/icons/wiki.png");   }
+				
+				/* make space for the 30x36 icon
+				 * on the left of each item */
+				#product-links h3,
+				#product-links p {
+					padding-left: 1em;
+					margin-left: 30px;
+				}
 			
 				#product-links h3 {
-					border-left: 2em solid #f00;
 					margin-bottom: 0.5em;
-					padding-left: 0.5em;
 					font-weight: bold;
+					color: #68c6eb;
 					
 					/* space out the
 					 * LIs vertically */
-					margin-top: 1em;
+					margin-top: 1.25em;
 				}
 				
 					#product-links h3 a {
-						color: #666;
-					}
+						color: #666; }
 				
 				#product-links p {
-					padding-left: 2.5em;
 					line-height: 1.4;
+					font-size: 90%;
+					color: #fff;
+					
+					/* four lines high (at 1.4 line
+					 * height), to stay aligned */
+					height: 5.6em;
+					
+					/* keep text away from
+					 * the right margin */
+					padding-right: 1em;
 				}
 
 		/* we must use a clearing hack element
@@ -228,7 +255,7 @@ body {
 
 #content,
 #sidebar {
-	color: #888;
+	color: #666;
 	
 	/* the last element will only have a 1em, margin-bottom,
 	 * so we need a bit of extra padding here to compensate */
@@ -258,21 +285,36 @@ body {
 		font-size: 125%;
 		font-weight: bold;
 		font-family: serif;
-		padding-top: 1.6em;
-		margin: 1.6em 0 0.8em 0;
+		padding-top: 1.6em; /* 2 @ 100% */
+		margin: 1.6em 0 0.8em 0; /* 2 0 1 0 @ 100% */
 		border-top: 1px dotted #eee;
 	}
 	
+	/* remove the divider from the first 
+	 * header/para pair in sane browsers */
 	#content h2:first-child,
 	#sidebar h2:first-child {
 		padding-top: 0;
 		border-top: 0;
 	}
+		
+		/* remove the border and padding from the
+		 * first header in internet exploder 6 */
+		#content h2,
+		#sidebar h2 {
+			border-top-style: expression(this.previousSibling == null ? "none" : "dotted");
+			padding-top:      expression(this.previousSibling == null ? "0"    : "1.6em");
+		}
+	
+	#content h3 {
+		font-weight: bold;
+		margin: 1em 0 0.5em 0;
+	}
 	
 	#content p,
 	#sidebar p {
 		margin: 1em 0;
-		line-height: 1.4;
+		line-height: 1.6;
 	}
 	
 		#content p a,
@@ -285,15 +327,33 @@ body {
 			#sidebar p a:hover {
 				text-decoration: underline; }
 	
+	/* blocks of text can "pop out" from the content
+	 * in a block of color. so far, i think there's
+	 * only one of these, on the home page */
+	#content div.popout {
+		border: 1px solid #e5c78d;
+		background: #fbf9f0;
+		padding: 1em;
+		margin: 2em 0;
+	}
+		
+		/* remove margins from content in pooped boxes,
+		 * since the box itself provides it (note that
+		 * paragraphs still have m-t to space them out) */
+		#content div.popout h2 { margin-top: 0; }
+		#content div.popout p  { margin-bottom: 0; }
+	
+	#content div.popout + h2 {
+		border-top: 0;
+		padding-top: 0;
+	}
+	
 	/* a short snip of additional information,
 	 * which isn't as important as most paragraphs */
 	#content p.more {
 		font-size: 80%;
-		color: #ccc;
+		color: #bbb;
 	}
-	
-		#content p.more a {
-			color: #ccc; }
 	
 	#sidebar ul.partners {
 		margin-left: -0.5em; }

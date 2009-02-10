@@ -5,7 +5,7 @@
 	<head>
 		<title></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
 	</head>
 	<body>
 		<div id="wrapper">
@@ -20,4 +20,8 @@
 					<li class="active"><a href="/">Home</a></li>
 				</ul>
 			</div>
+<!-- header ends -->
+
+
+
 
