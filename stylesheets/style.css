@@ -292,8 +292,8 @@ body {
 	
 	/* remove the divider from the first 
 	 * header/para pair in sane browsers */
-	#content h2:first-child,
-	#sidebar h2:first-child {
+	#content > div.nest > h2:first-child,
+	#sidebar > div.nest > h2:first-child {
 		padding-top: 0;
 		border-top: 0;
 	}
@@ -317,15 +317,22 @@ body {
 		line-height: 1.6;
 	}
 	
-		#content p a,
-		#sidebar p a {
-			color: #df5e32;
-			text-decoration: none;
+		/* a short snip of additional information,
+		 * which isn't as important as most paragraphs */
+		#content p.more {
+			font-size: 80%;
+			color: #bbb;
 		}
-		
-			#content p a:hover,
-			#sidebar p a:hover {
-				text-decoration: underline; }
+	
+	#content a,
+	#sidebar a {
+		color: #df5e32;
+		text-decoration: none;
+	}
+	
+		#content p a:hover,
+		#sidebar p a:hover {
+			text-decoration: underline; }
 	
 	/* blocks of text can "pop out" from the content
 	 * in a block of color. so far, i think there's
@@ -342,18 +349,37 @@ body {
 		 * paragraphs still have m-t to space them out) */
 		#content div.popout h2 { margin-top: 0; }
 		#content div.popout p  { margin-bottom: 0; }
+		
+		/* also remove divider from
+		 * first header+para pair */
+		#content div.popout h2:first-child {
+			padding-top: 0;
+			border-top: 0;
+		}
 	
 	#content div.popout + h2 {
 		border-top: 0;
 		padding-top: 0;
 	}
 	
-	/* a short snip of additional information,
-	 * which isn't as important as most paragraphs */
-	#content p.more {
-		font-size: 80%;
-		color: #bbb;
-	}
+	#content .feed { }
+	
+		/* despite being a list of links, we want
+		 * to display feeds in the #content as if
+		 * they're regular content */
+		#content .feed li {
+			display: block; }
+			
+			/* hide junk in the NYT sample feed
+			 * during development (TODO: remove) */
+			#content .feed br,
+			#content .feed .advertisment {
+				display: none; }
+		
+		/* the dates are far too wordy, for now,
+		 * but might be improved in future */
+		#content .feed .date {
+			display: none; }
 	
 	#sidebar ul.partners {
 		margin-left: -0.5em; }
@@ -381,17 +407,19 @@ body {
 				height: 0;
 			}
 
-	#sidebar div.feed ul {
+	/* rss feeds in the sidebar
+	 * are like... panel panes! */
+	#sidebar .feed ul {
 		overflow-y: scroll;
 		height: 25em;
 	}
 	
-		#sidebar div.feed li {
+		#sidebar .feed li {
 			padding-right: 1em;
 			display: block;
 		}
 		
-			#sidebar div.feed h3 a {
+			#sidebar .feed h3 a {
 				text-decoration: none;
 				font-weight: bold;
 				background: #eee;
@@ -401,14 +429,11 @@ body {
 				color: #444;
 			}
 			
-			#sidebar div.feed li div.date {
+			#sidebar .feed li div.date {
 				display: none;
 				font-size: 80%;
 				color: #aaa;
 			}
-	
-
-
 
 
 
@@ -425,11 +450,27 @@ body {
 	padding: 1.25em;
 }
 
+	#footer p {
+		margin-bottom: 0.5em; }
+	
 	#footer a {
-		color: #888;
+		color: #02a0db;
 		text-decoration: none;
 	}
 	
 		#footer a:hover {
-			text-decoration: underline;
-		}
+			text-decoration: underline; }
+	
+	#footer a.cc {
+		background: url("../images/buttons/cc-by-nc-nd-80x15.png") no-repeat;
+		display: block;
+		width: 80px;
+		height: 15px;
+		overflow: hidden;
+		text-indent: -9999px;
+		margin: 1em auto 0 auto;
+	}
+	
+	#footer #cc-more {
+		display: none; }
+
