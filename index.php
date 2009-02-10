@@ -2,7 +2,7 @@
 <div id="intro">
 	<div id="statement">
 		<h1>Defining New Directions in Development</h1>
-		<p class="p1">
+		<p>
 			Combining low-tech hardware with sophisticated open-source software,
 			we explore novel ways to both empower young people and improve UNICEF's
 			operations. We collaborate with others to make this happen.

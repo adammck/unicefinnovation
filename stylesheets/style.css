@@ -24,8 +24,12 @@ body {
 }
 
 #wrapper {
-	width: 80em;
 	margin: 0 auto;
+	
+	/* this is a temporary hack to accomodate
+	 * the non-flexible products page */
+	/*width: 80em;*/
+	width: 1000px;
 }
 
 	#header {
@@ -129,7 +133,7 @@ body {
 			
 		#nav-links {
 			background: #fff;
-			line-height: 3;
+			padding: 0.5em 0 1em 0;
 			
 			/* the child LIs are inline;
 			 * center them horizontally */
@@ -158,24 +162,50 @@ body {
 					color: #009fdb; }
 
 		#statement {
-			width: 50%;
-			float: left;
-			text-align: center;
+      color: #fff;
 			
 			/* note to potential future employers - this
 			 * absolute pixel positioning stuff is all
 			 * wrong, and i'm doing it under protest */
 			padding: 35px 0;
-			height: 171px; /* <-- bg image height */
-			background: url("../images/statement.png") no-repeat 50% 50%;
-		}
+    }
+		
+      #statement h1 {
+        font-size: 200%;
+        margin-bottom: 0.25em;
+        margin-left: 2em;
+      }
+      	
+      	/* some pages have graphical headers */
+      	body.products #statement h1 {
+      		height: 25px;
+      		overflow: hidden;
+      		text-indent: -9999px;
+      		background: url("../images/our-products.png") no-repeat;
+      	}
+      
+      #statement p {
+        font-size: 125%;
+        line-height: 1.4;
+        
+        /* 0, 4, 0.5, 4 @ 100% */
+        margin: 0 3.2em 0.4em 3.2em;
+      }
+		
+			body.index #statement {
+				width: 50%;
+				float: left;
+				text-align: center;
+				height: 171px; /* <-- bg image height */
+				background: url("../images/statement.png") no-repeat 50% 50%;
+			}
 			
-			/* hide accessible text */
-			#statement h1,
-			#statement p {
-				position: absolute;
-				text-indent: -9999px; }
-			
+				/* hide accessible text
+				 * on the home page*/
+				body.index #statement h1,
+				body.index #statement p {
+					position: absolute;
+					text-indent: -9999px; }
 		
 		#product-links {
 			width: 50%;
@@ -275,9 +305,10 @@ body {
 		width: 30%;
 	}
 	
+	/* spacing around content */
 	#content div.nest,
 	#sidebar div.nest {
-		padding: 0 2em; }
+		padding: 0 30px; }
 
 		#sidebar div.nest {
 			padding-left: 0; }
@@ -437,6 +468,43 @@ body {
 				font-size: 80%;
 				color: #aaa;
 			}
+
+	/* content in the products page is entirely different from
+	 * every other page. TODO: move this to a separate stylesheet */
+	body.products #content .nest div {
+		display: block;
+		float: left;
+		width: 459px;
+	}
+		
+		/* each section has a graphical header */
+		body.products #content h2 {
+			background-repeat: no-repeat;
+			border-top: none;
+			padding: 0;
+		}
+		
+			body.products #content h2 a {
+				text-indent: -9999px;
+				height: 100px;
+				width: 459px;
+				display: block;
+			}
+			
+			/* space between columns, in pixels
+			 * (30 + 459 + 22 + 459 + 30 = 1000) */
+			body.products div.mobile-and-sms,
+			body.products div.rugged-computing {
+				margin-right: 22px; }
+			
+			/* each section has a graphical header */
+			body.products div.mobile-and-sms    h2 { background-image: url("../images/products/mobile-and-sms.png");    }
+			body.products div.social-networking h2 { background-image: url("../images/products/social-networking.png"); }
+			body.products div.rugged-computing  h2 { background-image: url("../images/products/rugged-computing.png");  }
+			body.products div.wiki              h2 { background-image: url("../images/products/wiki.png");              }
+		
+		body.products #content p {
+			padding: 0 2em; }
 
 
 
