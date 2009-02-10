@@ -5,12 +5,12 @@
 			<div id="footer">
 				<p>
 					<a href="/">Home</a>                                   &bull;
+					<a href="/about.php">About</a>                         &bull;
 					<a href="/products.php">Products</a>                   &bull;
-					<a href="/mobile-and-sms.php>Mobile &amp; SMS</a>      &bull;
+					<a href="/mobile-and-sms.php">Mobile &amp; SMS</a>     &bull;
 					<a href="/rugged-computing.php">Rugged Computing</a>   &bull;
 					<a href="/social-networking.php">Social Networking</a> &bull;
-					<a href="/wiki.php">Wiki</a>                           &bull;
-					<a href="/about.php">About</a>
+					<a href="/wiki.php">Wiki</a>
 				</p>
 				
 				<p>

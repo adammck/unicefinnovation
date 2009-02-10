@@ -8,28 +8,26 @@
 			operations. We collaborate with others to make this happen.
 		</p>
 	</div>
-	
 	<ul id="product-links">
 		<li class="mobile">
-			<h3>Mobile &amp; SMS</h3>
+			<h3><a href="/mobile-and-sms.php">Mobile &amp; SMS</a></h3>
 			<p><strong>RapidSMS</strong>: Collecting data, coordinating logistics, enhancing communication, (with mobile phones).</p>
 		</li>
 		<li class="bee">
-			<h3>Ruggedized Computing</h3>
+			<h3><a href="/rugged-computing.php">Rugged Computing</a></h3>
 			<p><strong>The Bee</strong>: Data and communication anywhere, providing connectivity.<br /><br /></p>
 		</li>
 		<li class="social">
-			<h3>Social Networking</h3>
+			<h3><a href="/social-networking.php">Social Networking</a></h3>
 			<p><strong>YouthNet</strong>: forming connections, working together, creating opportunities.</p>
 		</li>
 		<li class="wiki">
-			<h3>Wiki</h3>
+			<h3><a href="/wiki.php">Wiki</a></h3>
 			<p><strong>Uniwiki</strong>: Simplifying collaboration, sharing information, designed for children.</p>
 		</li>
 		<span class="float-hack"></span>
 	</ul>
 </div>
-
 <div id="content" class="with-sidebar">
 	<div class="nest">
 		<div class="popout">
@@ -44,13 +42,11 @@
 		<?php print file_get_contents("/tmp/feeds/nyt"); ?>
 	</div>
 </div>
-
 <div id="sidebar">
 	<div class="nest">
 		<h2>Upcoming Events</h2>
 		<p>Morbi lacus. Suspendisse vel orci. Maecenas pede. Phasellus varius erat at risus.</p>
 		<p>Sed arcu. Mauris arcu. Curabitur suscipit sollicitudin eros. Donec interdum ligula.</p>
-		
 		<h2>Partners</h2>
 		<ul class="partners">
 			<li><a href="">Partner Link</a></li>
@@ -59,8 +55,6 @@
 			<li><a href="">Partner Link</a></li>
 			<span class="float-hack"></span>
 		</ul>
-		
-		
 	</div>
 </div>
 <?php require "includes/footer.php" ?>

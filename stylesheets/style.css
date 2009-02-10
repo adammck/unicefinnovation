@@ -223,8 +223,11 @@ body {
 					margin-top: 1.25em;
 				}
 				
+					/* links are in-cognito */
 					#product-links h3 a {
-						color: #666; }
+						text-decoration: none;
+						color: #68c6eb;
+					}
 				
 				#product-links p {
 					line-height: 1.4;
