@@ -9,7 +9,11 @@
 	<div id="statement">
 		<h1>Our Products</h1>
 		<p>
-			What goes here?
+			These products were developed as a response to the communication challenges that young people
+			and development professionals face.  The range of these products extends from writing software
+			for mobile phones and the web to building physical hardware.  The commonalities between the
+			products is that they are specifically designed for low bandwidth situations, built in
+			collaboration with others and meant to improve the way people work and communicate.
 		</p>
 	</div>
 </div>

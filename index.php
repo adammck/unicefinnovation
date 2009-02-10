@@ -45,8 +45,27 @@
 <div id="sidebar">
 	<div class="nest">
 		<h2>Upcoming Events</h2>
-		<p>Morbi lacus. Suspendisse vel orci. Maecenas pede. Phasellus varius erat at risus.</p>
-		<p>Sed arcu. Mauris arcu. Curabitur suscipit sollicitudin eros. Donec interdum ligula.</p>
+		<p>Come see us present at:</p>
+		<ul class="events">
+			<li>
+				<a href="http://web4dev.org"><img src="/images/buttons/web4dev.png" width="143" /></a>
+				<h4><a href="http://web4dev.org">Web4Dev</a></h4>
+				<p class="date">February 11-13, 2009</p>
+				<p class="where">New York, NY</p>
+			</li>
+			<li>
+				<a href="http://sxsw.com"><img src="/images/buttons/sxsw.png" width="143" /></a>
+				<h4><a href="http://sxsw.com">SXSW</a></h4>
+				<p class="date">March 13-17, 2009</p>
+				<p class="where">Austin, TX</p>
+			</li>
+			<li>
+				<a href="http://www.chi2009.org"><img src="/images/buttons/chi09.png" width="143" /></a>
+				<h4><a href="http://www.chi2009.org">Chi 2009</a></h4>
+				<p class="date">April 4-9, 2009</p>
+				<p class="where">Boston, MA</p>
+			</li>
+		</ul>
 		<h2>Partners</h2>
 		<ul class="partners">
 			<li><a href="">Partner Link</a></li>

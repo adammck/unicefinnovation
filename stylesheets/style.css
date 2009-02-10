@@ -415,6 +415,35 @@ body {
 		#content .feed .date {
 			display: none; }
 	
+	/* compensate for p-t gap
+	 * between event links */
+	#sidebar ul.events {
+		margin-top: -1em; }
+	
+		#sidebar ul.events li {
+			padding-top: 1.25em; /* 1 @ 100% */
+			display: block;
+			font-size: 80%;
+			overflow: auto;
+		}
+			
+			#sidebar ul.events h4,
+			#sidebar ul.events p {
+				line-height: 1.4; }
+			
+			#sidebar ul.events img {
+				padding-right: 1em;
+				border: none;
+				float: left;
+			}
+			
+			#sidebar ul.events p {
+				color: #888;
+				margin: 0;
+			}
+	
+	/* compensate for m-r gap
+	 * between floaty partner links */
 	#sidebar ul.partners {
 		margin-left: -0.5em; }
 	
