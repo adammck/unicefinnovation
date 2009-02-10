@@ -15,9 +15,10 @@
 					<!--<div id="tagline">We build <strong>Awesome Shit</strong> for children</div>-->
 				</div>
 				<ul id="nav-tabs">
-					<li><a href="/products.php">Products</a></li>
-					<li><a href="/about.php">About</a></li>
-					<li class="active"><a href="/">Home</a></li>
+					<?php if(!isset($tab)) $tab = ""; // dodge "undefined variable" warning ?>
+					<li<?php if($tab=="products") { ?> class="active"<?php } ?><a href="/products.php">Products</a></li>
+					<li<?php if($tab=="about")    { ?> class="active"<?php } ?><a href="/about.php">About</a></li>
+					<li<?php if($tab=="home")     { ?> class="active"<?php } ?>><a href="/">Home</a></li>
 				</ul>
 			</div>
 <!-- header ends -->

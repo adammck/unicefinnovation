@@ -1,4 +1,4 @@
-<?php require "includes/header.php" ?>
+<?php $tab="home"; require "includes/header.php" ?>
 <div id="intro">
 	<div id="statement">
 		<h1>Defining New Directions in Development</h1>

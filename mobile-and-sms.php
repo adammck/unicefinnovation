@@ -1,4 +1,4 @@
-<?php require "includes/header.php" ?>
+<?php $tab="products"; require "includes/header.php" ?>
 <div id="intro">
 	<ul id="nav-links">
 		<li class="active"><a href="/mobile-and-sms.php">Mobile &amp; SMS</a></li>

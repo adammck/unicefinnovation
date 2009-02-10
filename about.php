@@ -1,4 +1,4 @@
-<?php require "includes/header.php" ?>
+<?php $tab="about"; require "includes/header.php" ?>
 <div id="content">
 	<div class="nest">
 		Nothing to see here
