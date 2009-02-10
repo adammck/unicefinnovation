@@ -37,8 +37,24 @@
 		</div>
 		
 		<h2>News &amp; Press</h2>
-		<p>Fusce condimentum <a href="">pellentesque pede</a>. Pellentesque lacinia velit ac leo. Proin dignissim, urna id ornare faucibus, mauris turpis placerat lorem, at malesuada tortor erat vel quam. Morbi vitae dolor. Vivamus et lacus ut est euismod dictum. Aenean suscipit tortor pellentesque augue. Ut dui. Donec facilisis congue neque. Sed leo. Morbi ultricies molestie justo. Nam ligula lectus, gravida sed, lacinia vitae, sagittis at, urna. Quisque tempor, augue at convallis commodo, dolor leo lacinia neque, sed euismod lorem arcu sed dolor. </p>
-	
+		<div class="feed">
+			<li>
+				<h3><a href="">Monkeys</a></h3>
+				<span class="source">The Zoo</span>
+				<div class="date">Jan 05, 2009</div>
+			</li>
+			<li>
+				<h3><a href="">Monkeys</a></h3>
+				<span class="source">The Zoo</span>
+				<div class="date">Jan 05, 2009</div>
+			</li>
+			<li>
+				<h3><a href="">Monkeys</a></h3>
+				<span class="source">The Zoo</span>
+				<div class="date">Jan 05, 2009</div>
+			</li>
+		</div>
+		
 		<?php print file_get_contents("/tmp/feeds/nyt"); ?>
 	</div>
 </div>

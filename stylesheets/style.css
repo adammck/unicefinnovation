@@ -289,6 +289,7 @@ body {
 #content,
 #sidebar {
 	color: #666;
+	overflow: auto;
 	
 	/* the last element will only have a 1em, margin-bottom,
 	 * so we need a bit of extra padding here to compensate */
@@ -397,12 +398,25 @@ body {
 	}
 	
 	#content .feed { }
-	
+		
 		/* despite being a list of links, we want
 		 * to display feeds in the #content as if
 		 * they're regular content */
 		#content .feed li {
 			display: block; }
+			
+			#content .feed h3,
+			#content .feed span.source {
+				padding-bottom: 0.5em;
+				padding-right: 0.5em;
+				float: left;
+				margin: 0;
+			}
+			
+			#content .feed span.source {
+				font-weight: bold;
+				color: #ccc;
+			}
 			
 			/* hide junk in the NYT sample feed
 			 * during development (TODO: remove) */
@@ -413,7 +427,13 @@ body {
 		/* the dates are far too wordy, for now,
 		 * but might be improved in future */
 		#content .feed .date {
-			display: none; }
+			margin: 0.625em 0 1.25em 0; /* 0.5, 0, 1, 0 @ 100% */
+			font-size: 80%;
+			color: #aaa;
+			clear: both;
+			/*display: none;*/
+		}
+		
 	
 	/* compensate for p-t gap
 	 * between event links */
