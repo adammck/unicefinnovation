@@ -43,15 +43,13 @@ body {
 	}
 	
 		#masthead {
-			padding: 1em;
-			height: 2em;
 		}
 			
 			/* float everything to make IE6 happy;
 			 * the static #masthead height ensures
 			 * that the container doesn't collapse */
 			#masthead h1,
-			#mathead h1 a,
+			#masthead h1 a,
 			#tagline {
 				display: block;
 				float: left;
@@ -60,13 +58,18 @@ body {
 			#masthead h1 {
 				font-size: 200%;
 				font-weight: normal;
-				text-indent: -9999px;
+				padding-left: 20px;
 			}
 	
 				#masthead h1 a {
-					text-decoration: none;
-					color: #888;
+					width: 380px;
+					height: 112px;
 				}
+				
+					#masthead h1 a span {
+						position: absolute;
+						top: -9999px;
+					}
 	
 			#tagline {
 				color: #aaa;
@@ -328,7 +331,17 @@ body {
 			clear: both;
 			height: 0;
 		}
+	
+	#content form div {
+		padding-bottom: 0.5em;
+	}
 
+		#content form label {
+			display: block;
+			float: left;
+			width: 7em;
+			margin-top: 0.25em;
+		}
 
 
 
