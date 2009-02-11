@@ -122,15 +122,21 @@ body {
 					}
 					
 					#nav-tabs li.active a {
-						color: #009fdb; }
+						color: #009fdb;
+					}
 
 	#intro {
 		background: #2c2f53;
 		position: relative;
 		overflow: auto;
-		margin-top: 0.5em;
     height: 250px;
 	}
+		
+		/* pages with no nav links across the
+		 * top need a little manual shunt to
+		 * line everything up correctly */
+		#intro.no-nav-links {
+			margin-top: 0.5em; }
 	
 		body.mobile-and-sms    #intro { background: #6b462e url("../images/intros/mobile-and-sms.png")    no-repeat; }
 		body.rugged-computing  #intro { background: #325a1c url("../images/intros/rugged-computing.jpg")  no-repeat; }
@@ -145,7 +151,7 @@ body {
 		
 		#nav-links {
 			background: #fff;
-			padding: 0.5em 0 1em 0;
+			padding: 1em 0 1em 0;
 			
 			/* the child LIs are inline;
 			 * center them horizontally */
@@ -155,6 +161,11 @@ body {
 			#nav-links li {
 				display: inline;
 				margin-right: 1em;
+				padding-top: 0.5em;
+				
+				/* the border is always present, so
+				 * the active link isn't misaligned */
+				border-top: 0.5em solid #fff;
 			}
 				
 				/* remove the margin on the last item,
@@ -170,8 +181,11 @@ body {
 					color: #68c6eb;
 				}
 				
-				#nav-links li.active a {
-					color: #009fdb; }
+				#nav-links li.active {
+					border-top-color: #009fdb; }
+					
+					#nav-links li.active a {
+						color: #009fdb; }
 
 		#statement {
       color: #fff;
