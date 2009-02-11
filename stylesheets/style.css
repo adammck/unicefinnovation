@@ -317,6 +317,7 @@ body {
 
 	#sidebar {
 		float: right;
+		color: #aaa;
 		width: 30%;
 	}
 	
@@ -355,16 +356,21 @@ body {
 			padding-top:      expression(this.previousSibling == null ? "0"    : "1.6em");
 		}
 	
+	/* space out paragraphs a little more
+	 * in the content than the sidebar */
+	#content p { margin: 1em 0; }
+	#sidebar p { margin: 0.5em 0; }
+	
 	#content h3 {
 		font-weight: bold;
 		margin: 1em 0 0.5em 0;
 	}
 	
-	#content p,
-	#sidebar p {
-		margin: 1em 0;
-		line-height: 1.6;
-	}
+	/* space out the real
+	 * text content a bit */
+	#content p,  #content li,
+	#sidebar p , #sidebar li {
+		line-height: 1.6; }
 	
 		/* a short snip of additional information,
 		 * which isn't as important as most paragraphs */
@@ -373,6 +379,9 @@ body {
 			color: #bbb;
 		}
 	
+	/* within the content (and sidebar)
+	 * sections, links are orange. outside
+	 * of that, all bets are off */
 	#content a,
 	#sidebar a {
 		color: #df5e32;
@@ -382,6 +391,14 @@ body {
 		#content p a:hover,
 		#sidebar p a:hover {
 			text-decoration: underline; }
+	
+	#sidebar h4 {
+		font-weight: bold;
+		color: #888;
+	}
+	
+		#sidebar h4 span {
+			font-weight: normal; }
 	
 	/* blocks of text can "pop out" from the content
 	 * in a block of color. so far, i think there's

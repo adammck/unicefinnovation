@@ -17,9 +17,7 @@
 </div>
 <div id="content" class="with-sidebar">
 	<div class="nest">
-		<h2>Mobile and Rapid SMS</h2>
-		
-		<h3>The Issue (Development Needs and Technology Changes)</h3>
+		<h2>The Issue (Development Needs and Technology Changes)</h2>
 		<p>One of the biggest challenges facing UNICEF's field operations is access to accurate and timely information. With the recent proliferation of technology throughout the developing world, the ability to improve this access has become cheaper and the tools to do so, ubiquitous.  Mobile phones have spread the fastest and farthest of all these technologies with the GSMA predicting that by 2010, 90% of the world will be covered by mobile networks.  RapidSMS capitalizes on this change by integrating the instantaneous information transfer that mobile phones allow into established methods of UNICEF's work.</p>
 		
 		<h2>Action</h2>
@@ -32,40 +30,52 @@
 		<p>The impact a RapidSMS implementation has on UNICEF's work practices is dramatic.  In October 2008, Ethiopia experienced crippling droughts.  Faced with the possibility of famine, UNICEF Ethiopia launched a massive food distribution program to supply the high-protein food Plumpy'nut to under-nourished children at more than 1,800 feeding centres in the country. Previously, UNICEF monitored the distribution of food by sending a small set of individuals who traveled to each feeding center.  The monitor wrote down the amount of food that was received, was distributed, and if more food was needed.  There had been a two week to two month delay between the collection of that data and analysis, prolonging action.  In a famine situation each day can mean the difference between recovery, starvation, or even death. </p>
 		<p>The Ethiopian implementation of RapidSMS completely eliminated the delay.  After a short training session the monitors would enter information directly into their mobile phones as SMS messages.  This data would instantaneously appear on the server and immediately be visualized into graphs showing potential distribution problem and displayed on a map clearly showing where the problems were. The data could be seen, not only by the field office, but by the regional office, supply division and even headquarters, greatly improving response coordination.  The process of entering the data into phones was also easier and more cost effective for the monitors themselves leading to quick adoption of the technology. </p>
 		<p>Without accurate and timely data, it is very difficult to make decisions, see where there are problems, respond quickly, and allocate resources effectively. RapidSMS is a powerful suite of tools that directly address this problem improving coordination and impact.</p>
-		
 	</div>
 </div>
 <div id="sidebar">
 	<div class="nest">
-		<h2>Upcoming Events</h2>
-		<p>Come see us present at:</p>
-		<ul class="events">
+		<h2>Related Links</h2>
+		<ul class="links">
 			<li>
-				<a href="http://web4dev.org"><img src="/images/buttons/web4dev.png" width="143" /></a>
-				<h4><a href="http://web4dev.org">Web4Dev</a></h4>
-				<p class="date">February 11-13, 2009</p>
-				<p class="where">New York, NY</p>
+				<h4><a href="http://google.com/search?q=rapidsms">Download RapidSMS</a></h4>
+				<p>How to get it, what you need to run it &amp; what to do with it.</p>
 			</li>
 			<li>
-				<a href="http://sxsw.com"><img src="/images/buttons/sxsw.png" width="143" /></a>
-				<h4><a href="http://sxsw.com">SXSW</a></h4>
-				<p class="date">March 13-17, 2009</p>
-				<p class="where">Austin, TX</p>
+				<h4><a href="http://mobilehacking.org">MobileHacking.org</a></h4>
+				<p>Develop computer and mobile phone applications that involve various telephony interfaces.</p>
 			</li>
 			<li>
-				<a href="http://www.chi2009.org"><img src="/images/buttons/chi09.png" width="143" /></a>
-				<h4><a href="http://www.chi2009.org">Chi 2009</a></h4>
-				<p class="date">April 4-9, 2009</p>
-				<p class="where">Boston, MA</p>
+				<h4><a href="http://google.com/search?q=rapidsms">Download RapidSMS</a></h4>
+				<p>How to get it, what you need to run it &amp; what to do with it</p>
 			</li>
 		</ul>
+		<h2>Learn</h2>
+		<ul class="learn">
+			<li>
+				<h4>Text messaging<span> or </span>Texting</h4>
+				<p>is the common term for the sending of "short" (160 characters or fewer, including spaces) text messages from mobile phones using the Short Message Service (SMS).</p>
+			</li>
+			<li>
+				<h4>Short Message Service (SMS)</h4>
+				<p>is a communications protocol allowing the interchange of short text messages between mobile telephone services. The SMS technology has facilitated the development and growth of text messaging. The connection between the phenomenon of text messaging and the underlying technology is so great that in parts of the world the term "SMS" is used as a synonym for a text message or the act of sending a text message, even when a different protocol is being used.</p>
+			</li>
+			<li>
+				<h4>Plumpy'nut<span>, also known as </span>Plumpy</h4>
+				<p>is a peanut-based food for use in famine relief which was formulated in 1999 by André Briend, a French scientist. Plumpy'nut is a high protein, high energy paste that tastes slightly sweeter than peanut butter.</p>
+			</li>
+		</ul>
+		<!--<h2>In Action</h2>
+		<p>Blah blah blah</p>-->
+		<h2>In the News</h2>
+		<ul class="news">
+			<li><a href="http://www.irinnews.org/Report.aspx?ReportId=82346">IRIN</a></li>
+			<li><a href="http://mobileactive.org/usaids-development-2-0-challenge-mobile-innovation-and-winner">Mobile Active</a></li>
+			<li><a href="http://www.160characters.org/news.php?action=view&nid=2752">160 Characters</a></li>
+		</ul>
 		<h2>Partners</h2>
-		<ul class="partners">
-			<li><a href="">Partner Link</a></li>
-			<li><a href="">Partner Link</a></li>
-			<li><a href="">Partner Link</a></li>
-			<li><a href="">Partner Link</a></li>
-			<span class="float-hack"></span>
+		<ul>
+			<li><a href="http://www.sipa.columbia.edu/news_events/announcements/sipanews10.html">Columbia</a></li>
+			<li><a href="http://mobileactive.org">MobileActive</a></li>
 		</ul>
 	</div>
 </div>
