@@ -16,7 +16,7 @@
 		<div id="wrapper">
 			<div id="header">
 				<div id="masthead">
-					<h1><a href="/">UNICEF Innovation</a></h1>
+					<h1><a href="/"><span>UNICEF Innovation</span></a></h1>
 					<!--<div id="tagline">We build <strong>Awesome Shit</strong> for children</div>-->
 				</div>
 				<ul id="nav-tabs">
