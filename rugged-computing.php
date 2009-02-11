@@ -17,7 +17,7 @@
 </div>
 <div id="content" class="with-sidebar">
 	<div class="nest">
-		<h2>The Issue (Development Needs and Technology Changes)</h2>
+		<h2>The Issue</h2>
 		<p>UNICEF is always looking for tools and methods for improving it's emergency responses in crisis situations.  The Bee is designed to provide a computing and communications infrastructure during an emergency.  For such responses to be successful, it is essential that UNICEF and other relief organizations have access to reliable information both during and immediately after the crisis. UNICEF Innovations sought to create a diverse communications system that is easily transportable, powered in a variety of ways and able to withstand adverse environmental conditions. Constructed with commonly available components and with blueprints online, they are easy and cheap to repair and outside organizations can create their own Bee.</p>
 		
 		<h2>Action</h2>

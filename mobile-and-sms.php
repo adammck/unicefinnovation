@@ -17,7 +17,7 @@
 </div>
 <div id="content" class="with-sidebar">
 	<div class="nest">
-		<h2>The Issue (Development Needs and Technology Changes)</h2>
+		<h2>The Issue</h2>
 		<p>One of the biggest challenges facing UNICEF's field operations is access to accurate and timely information. With the recent proliferation of technology throughout the developing world, the ability to improve this access has become cheaper and the tools to do so, ubiquitous.  Mobile phones have spread the fastest and farthest of all these technologies with the GSMA predicting that by 2010, 90% of the world will be covered by mobile networks.  RapidSMS capitalizes on this change by integrating the instantaneous information transfer that mobile phones allow into established methods of UNICEF's work.</p>
 		
 		<h2>Action</h2>

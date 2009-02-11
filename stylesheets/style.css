@@ -129,20 +129,16 @@ body {
 		position: relative;
 		overflow: auto;
 		margin-top: 0.5em;
+    height: 250px;
 	}
 	
-		body.mobile-and-sms #intro {
-    	background: #6b462e url("../images/intros/mobile-and-sms.png") no-repeat;
-    	height: 250px;
-		}
-		
-		body.rugged-computing #intro {
-    	background: #325a1c url("../images/intros/rugged-computing.jpg") no-repeat;
-    	height: 249px;
-		}
+		body.mobile-and-sms   #intro { background: #6b462e url("../images/intros/mobile-and-sms.png")   no-repeat; }
+		body.rugged-computing #intro { background: #325a1c url("../images/intros/rugged-computing.jpg") no-repeat; }
+		body.wiki             #intro { background: #325a1c url("../images/intros/wiki.jpg")             no-repeat; }
 		
 			body.mobile-and-sms #statement,
-			body.rugged-computing #statement {
+			body.rugged-computing #statement,
+			body.wiki #statement {
 				width: 50%; }
 		
 		#nav-links {
@@ -194,7 +190,8 @@ body {
       	/* some pages have graphical headers */
       	body.products #statement h1,
       	body.mobile-and-sms #statement h1,
-      	body.rugged-computing #statement h1 {
+      	body.rugged-computing #statement h1,
+      	body.wiki #statement h1 {
       		height: 34px;
       		overflow: hidden;
       		text-indent: -9999px;
@@ -204,6 +201,7 @@ body {
       	body.products         #statement h1 { background-image: url("../images/our-products.png"); }
       	body.mobile-and-sms   #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
       	body.rugged-computing #statement h1 { background-image: url("../images/rugged-computing.png"); }
+      	body.wiki             #statement h1 { background-image: url("../images/wiki.png"); }
       
       #statement p {
         font-size: 125%;
