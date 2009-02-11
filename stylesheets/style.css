@@ -195,7 +195,7 @@ body {
       	body.products #statement h1,
       	body.mobile-and-sms #statement h1,
       	body.rugged-computing #statement h1 {
-      		height: 25px;
+      		height: 34px;
       		overflow: hidden;
       		text-indent: -9999px;
       		background-repeat: no-repeat;
@@ -203,7 +203,7 @@ body {
       	
       	body.products         #statement h1 { background-image: url("../images/our-products.png"); }
       	body.mobile-and-sms   #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
-      	body.rugged-computing #statement h1 { background-image: url("../images/rugged-computing.png"); height: 34px; }
+      	body.rugged-computing #statement h1 { background-image: url("../images/rugged-computing.png"); }
       
       #statement p {
         font-size: 125%;
