@@ -33,7 +33,7 @@
 		<div class="popout">
 			<h2 class="first">About UNICEF</h2>
 			<p>UNICEF is on the ground in over 150 countries and territories to help children survive and thrive, from early childhood through adolescence.  The world's largest provider of vaccines for developing countries, UNICEF supports child health and nutrition, good water and sanitation, quality basic education for all boys and girls, and the protection of children from violence, exploitation, and AIDS. UNICEF is funded entirely by the voluntary contributions of individuals, businesses, foundations and governments.</p>
-			<p class="more">For more information on UNICEF, please go to <a href="http://www.unicef.org">unicef.org</a></p>
+			<p class="more">For more information on UNICEF, please go to <a href="http://www.unicef.org">www.unicef.org</a></p>
 		</div>
 		
 		<h2>News &amp; Press</h2>
@@ -90,11 +90,18 @@
 			</li>
 		</ul>
 		<h2>Partners</h2>
+		<p>Some of our partners include:</p>
 		<ul class="partners">
-			<li><a href="">Partner Link</a></li>
-			<li><a href="">Partner Link</a></li>
-			<li><a href="">Partner Link</a></li>
-			<li><a href="">Partner Link</a></li>
+			<li><a href="http://www.sipa.columbia.edu/news_events/announcements/sipanews10.html">Columbia</a></li>
+			<li><a href="http://www.dimagi.com/">Dimagi</a></li>
+			<li><a href="http://mobileactive.org">MobileActive</a></li>
+			<li><a href="http://www.csir.co.za/">CSIR</a></li>
+			<li><a href="http://www.amd.com">AMD</a></li>
+			<li><a href="http://www.via.com.tw">VIA</a></li>			
+			<li><a href="http://riseuplabs.org/crabgrass/">Riseup</a></li>
+			<li><a href="http://www.icouldbe.org/">icouldbe</a></li>			
+			<li><a href="http://www.mediawiki.org">MediaWiki</a></li>
+			<li><a href="http://www.kennisnet.nl/">Kennisnet</a></li>
 			<span class="float-hack"></span>
 		</ul>
 	</div>
