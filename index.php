@@ -39,19 +39,25 @@
 		<h2>News &amp; Press</h2>
 		<div class="feed">
 			<li>
-				<h3><a href="">Monkeys</a></h3>
-				<span class="source">The Zoo</span>
-				<div class="date">Jan 05, 2009</div>
+				<h3>
+					<a href="http://mobileactive.org/usaids-development-2-0-challenge-mobile-innovation-and-winner">USAID's Development 2.0 Challenge on Mobile Innovation: And the Winner is UNICEF/Columbia University</a>
+					<span class="source">Mobile Active</span>
+					<span class="date">Jan 08, 2009</span>
+				</h3>
 			</li>
 			<li>
-				<h3><a href="">Monkeys</a></h3>
-				<span class="source">The Zoo</span>
-				<div class="date">Jan 05, 2009</div>
+				<h3>
+					<a href="http://www.irinnews.org/Report.aspx?ReportId=82346">MALAWI: SMS to fight malnutrition</a>
+					<span class="source">IRIN</span>
+					<span class="date">Feb 11, 2009</span>
+				</h3>
 			</li>
 			<li>
-				<h3><a href="">Monkeys</a></h3>
-				<span class="source">The Zoo</span>
-				<div class="date">Jan 05, 2009</div>
+				<h3>
+					<a href="http://www.hindustantimes.com/StoryPage/StoryPage.aspx?sectionName=&id=e2118648-eb6a-4a82-a0e4-9b81b2fe91b8&&Headline=UNICEF+wins+award+for+helping+malnourished+children">UNICEF wins top US award for helping malnourished children</a>
+					<span class="source">Hindustan Times</span>
+					<span class="date">Jan 10, 2009</span>
+				</h3>
 			</li>
 		</div>
 		

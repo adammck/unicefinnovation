@@ -130,7 +130,15 @@ body {
 		overflow: auto;
 		margin-top: 0.5em;
 	}
-			
+	
+		body.mobile-and-sms #intro {
+    	background: #6b462e url("../images/intros/mobile-and-sms.png") no-repeat;
+    	height: 250px;
+		}
+		
+			body.mobile-and-sms #statement {
+				width: 50%; }
+		
 		#nav-links {
 			background: #fff;
 			padding: 0.5em 0 1em 0;
@@ -173,23 +181,29 @@ body {
       #statement h1 {
         font-size: 200%;
         margin-bottom: 0.25em;
-        margin-left: 2em;
+        /*margin-left: 2em;*/
+        margin-left: 35px;
       }
       	
       	/* some pages have graphical headers */
-      	body.products #statement h1 {
+      	body.products #statement h1,
+      	body.mobile-and-sms #statement h1 {
       		height: 25px;
       		overflow: hidden;
       		text-indent: -9999px;
-      		background: url("../images/our-products.png") no-repeat;
+      		background-repeat: no-repeat;
       	}
+      	
+      	body.products       #statement h1 { background-image: url("../images/our-products.png"); }
+      	body.mobile-and-sms #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
       
       #statement p {
         font-size: 125%;
         line-height: 1.4;
         
         /* 0, 4, 0.5, 4 @ 100% */
-        margin: 0 3.2em 0.4em 3.2em;
+        /*margin: 0 3.2em 0.4em 3.2em;*/
+        margin: 0 3.2em 0.4em 35px;
       }
 		
 			body.index #statement {
@@ -403,19 +417,19 @@ body {
 		 * to display feeds in the #content as if
 		 * they're regular content */
 		#content .feed li {
-			display: block; }
+			display: block;
+			margin: 1em 0;
+		}
 			
 			#content .feed h3,
 			#content .feed span.source {
-				padding-bottom: 0.5em;
-				padding-right: 0.5em;
-				float: left;
+				line-height: 1.4;
 				margin: 0;
 			}
 			
 			#content .feed span.source {
 				font-weight: bold;
-				color: #ccc;
+				color: #aaa;
 			}
 			
 			/* hide junk in the NYT sample feed
@@ -427,13 +441,10 @@ body {
 		/* the dates are far too wordy, for now,
 		 * but might be improved in future */
 		#content .feed .date {
-			margin: 0.625em 0 1.25em 0; /* 0.5, 0, 1, 0 @ 100% */
 			font-size: 80%;
-			color: #aaa;
-			clear: both;
-			/*display: none;*/
+			color: #ccc;
 		}
-		
+	
 	
 	/* compensate for p-t gap
 	 * between event links */
@@ -504,7 +515,6 @@ body {
 		
 			#sidebar .feed h3 a {
 				text-decoration: none;
-				font-weight: bold;
 				background: #eee;
 				line-height: 1.4;
 				display: block;
@@ -515,6 +525,7 @@ body {
 			#sidebar .feed li div.date {
 				display: none;
 				font-size: 80%;
+				font-weight: bold;
 				color: #aaa;
 			}
 
