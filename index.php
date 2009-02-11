@@ -62,7 +62,7 @@
 		</div>
 		
 		<h2>Web4dev Event Blog</h2>
-		<?php print file_get_contents("/tmp/feeds/web4devblog"); ?>
+		<?php print file_get_contents("feeds/web4dev-blog.html"); ?>
 	</div>
 </div>
 <div id="sidebar">

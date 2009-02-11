@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+# vim: noet
+
+feeds = {
+	"web4dev-blog" => "http://blog.web4dev.org/rss"
+}
+
+
+
+
+# find the website root (one dir up from here)
+root = File.expand_path(File.dirname(__FILE__) + "/..")
+
+# build paths to the input (erb
+# templates) and output (rendered html)
+erb_dir  = root + "/feed-templates"
+html_dir = root + "/feeds"
+
+# iterate the feeds, pull each and convert to a
+# chunk of html with pants (TODO: this functionality
+# should really be moved INTO pants)
+feeds.each do |file, url|
+	`pants #{url} #{erb_dir}/#{file}.erb > #{html_dir}/#{file}.html`
+end
