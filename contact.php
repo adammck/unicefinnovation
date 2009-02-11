@@ -1,18 +1,27 @@
 <?php
 	$tab="about";
 	require "includes/header.php";
-
+	require "includes/smtp.php";
+	
 	# was the form submitted?
 	if(isset($_POST['submit'])) {
 
-		$to = "support@mepemepe.com";
+		include("Mail.php");
+		$mail = Mail::factory("smtp", array(
+			"host"     => $smtp_host,
+			"username" => $smtp_user,
+			"password" => $smtp_pass,
+			"auth"     => true,
+		));
+		
+		$to = "adam.mckaig@gmail.com";
 		$subject = "Mail from UNICEF Innovation";
-		$name_field = $_POST['name'];
-		$email_field = $_POST['email'];
-		$message = $_POST['message'];
-		 
-		$body = "From: $name_field\n E-Mail: $email_field\n Message:\n $message";
-		mail($to, $subject, $body);
+		$name_field = $_POST["name"];
+		$email_field = $_POST["email"];
+		$message = $_POST["message"];
+		
+		$body = "From: $name_field\nE-Mail: $email_field\n\nMessage:\n$message";
+		$mail->send($to, array("From" => $from, "Subject" => $subject), $body);
 ?>
 <div id="content">
 	<div class="nest">
