@@ -392,6 +392,10 @@ body {
 	#content p,  #content li,
 	#sidebar p , #sidebar li {
 		line-height: 1.6; }
+
+	/* space out the real
+	 * text content more */
+	#sidebar li {padding-top:.3em;}
 	
 		/* a short snip of additional information,
 		 * which isn't as important as most paragraphs */
@@ -409,8 +413,8 @@ body {
 		text-decoration: none;
 	}
 	
-		#content p a:hover,
-		#sidebar p a:hover {
+		#content a:hover,
+		#sidebar a:hover {
 			text-decoration: underline; }
 	
 	#sidebar h4 {
