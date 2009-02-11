@@ -43,7 +43,7 @@
 		<h2>Learn</h2>
 		<ul class="learn">
 			<li>
-				<h4>GSMs</h4>
+				<h4>GSM</h4>
 				<p>Global System for Mobile communications(GSM) is the most popular standard for mobile phones in the world. Its promoter, the GSM Association, estimates that 80% of the global mobile market uses the standard. Its ubiquity makes international roaming very common between mobile phone operators, enabling subscribers to use their phones in many parts of the world. GSM differs from its predecessors in that both signaling and speech channels are digital, and thus is considered a second generation (2G) mobile phone system.</p>
 			</li>
 			<li>
@@ -65,6 +65,7 @@
 			<li><a href="http://www.csir.co.za/">CSIR</a></li>
 			<li><a href="http://www.amd.com">AMD</a></li>
 			<li><a href="http://www.via.com.tw">VIA</a></li>
+			<li><a href="http://www.inveneo.org/">Inveneo</a></li>
 		</ul>
 	</div>
 </div>
