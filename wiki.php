@@ -9,9 +9,7 @@
 	<div id="statement">
 		<h1>Wiki</h1>
 		<p>
-			The Bee is UNICEF's solar-powered portable computing system
-			for emergency response that allows communication, connectivity
-			and data access where infrastructure does not exist.
+			Uniwiki extends the software that powers Wikipedia, making it easier for children around the world to share and collaborate online.
 		</p>
 	</div>
 </div>
@@ -47,17 +45,16 @@
 				<p>is a measure of available or consumed data communication resources expressed in bit/s or multiples of it (kbit/s, Mbit/s etc).</p>
 			</li>
 		</ul>
-		<!--<h2>In the News</h2>
+		<h2>In the News</h2>
 		<ul class="news">
-			<li><a href="http://dvice.com/archives/2008/08/unicefs_bee_wil.php">Dvice</a></li>
-			<li><a href="http://www.unicef.org/emerg/index_45259.html">UNICEF</a></li>
-		</ul>-->
+			<li><a href="http://extensiontesting.blogspot.com/2008/11/betawiki-supports-uniwiki-extensions.html">Betawiki supports Uniwiki extensions </a></li>
+		</ul>
 		<h2>Partners</h2>
 		<ul>
-			<li><a href="http://appropedia.org">Appropedia</a></li>
-			<li><a href="http://wikihow.com">wikigender.org</a></li>
-			<li><a href="http://wikihow.com">wikiHow</a></li>
 			<li><a href="http://www.mediawiki.org">MediaWiki</a></li>
+			<li><a href="http://www.appropedia.org">Appropedia</a></li>
+			<li><a href="http://www.kennisnet.nl/">Kennisnet</a></li>
+			<li><a href="http://www.wikihow.com">wikiHow</a></li>
 		</ul>
 	</div>
 </div>
