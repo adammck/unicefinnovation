@@ -37,16 +37,12 @@
 		<h2>Related Links</h2>
 		<ul class="links">
 			<li>
-				<h4><a href="http://google.com/search?q=rapidsms">Download RapidSMS</a></h4>
-				<p>How to get it, what you need to run it &amp; what to do with it.</p>
+				<h4><a href="http://sourceforge.net/projects/rapidsms/">Download RapidSMS</a></h4>
+				<p>Download the sourcecode for RapidSMS from sourceforges.</p>
 			</li>
 			<li>
 				<h4><a href="http://mobilehacking.org">MobileHacking.org</a></h4>
 				<p>Develop computer and mobile phone applications that involve various telephony interfaces.</p>
-			</li>
-			<li>
-				<h4><a href="http://google.com/search?q=rapidsms">Download RapidSMS</a></h4>
-				<p>How to get it, what you need to run it &amp; what to do with it</p>
 			</li>
 		</ul>
 		<h2>Learn</h2>
@@ -68,14 +64,15 @@
 		<p>Blah blah blah</p>-->
 		<h2>In the News</h2>
 		<ul class="news">
-			<li><a href="http://www.irinnews.org/Report.aspx?ReportId=82346">IRIN</a></li>
-			<li><a href="http://mobileactive.org/usaids-development-2-0-challenge-mobile-innovation-and-winner">Mobile Active</a></li>
-			<li><a href="http://www.160characters.org/news.php?action=view&nid=2752">160 Characters</a></li>
+			<li><a href="http://www.irinnews.org/Report.aspx?ReportId=82346">MALAWI: SMS to fight malnutrition</a></li>
+			<li><a href="http://mobileactive.org/usaids-development-2-0-challenge-mobile-innovation-and-winner">USAID's Development 2.0 Challenge on Mobile Innovation: And the Winner is UNICEF/Columbia University</a></li>
+			<li><a href="http://www.160characters.org/news.php?action=view&nid=2752">Social Use: SMS Wins UNICEF An Award </a></li>
 		</ul>
 		<h2>Partners</h2>
 		<ul>
-			<li><a href="http://www.sipa.columbia.edu/news_events/announcements/sipanews10.html">Columbia</a></li>
+			<li><a href="http://www.sipa.columbia.edu/news_events/announcements/sipanews10.html">Columbia University</a></li>
 			<li><a href="http://mobileactive.org">MobileActive</a></li>
+			<li><a href="http://www.dimagi.com/">Dimagi</a></li>
 		</ul>
 	</div>
 </div>
