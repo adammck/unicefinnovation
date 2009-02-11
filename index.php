@@ -1,5 +1,5 @@
 <?php $tab="home"; require "includes/header.php" ?>
-<div id="intro">
+<div id="intro" class="no-nav-links">
 	<div id="statement">
 		<h1>Defining New Directions in Development</h1>
 		<p>

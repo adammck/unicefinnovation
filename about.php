@@ -1,5 +1,5 @@
 <?php $tab="about"; require "includes/header.php" ?>
-<div id="intro">
+<div id="intro" class="no-nav-links">
 	<div id="statement">
 		<h1>Our Mission</h1>
 		<p>
