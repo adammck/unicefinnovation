@@ -61,6 +61,7 @@
 			</li>
 		</div>
 		
+		<h2>Web4dev Event Blog</h2>
 		<?php print file_get_contents("/tmp/feeds/web4devblog"); ?>
 	</div>
 </div>
