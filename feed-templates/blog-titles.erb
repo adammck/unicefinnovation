@@ -1,0 +1,10 @@
+<% require "date" %>
+<div class="feed">
+	<h2><%= @data.channel.title %></h2>
+	<ul><% @data.items.each do |item| %>
+		<li>
+			<h3><a href="<%= item.link %>"><%= item.title %></a></h3>
+			<div class="date"><%= item.date.strftime("%b %d, %Y") %></div>
+		</li><% end %>
+	</ul>
+</div>
