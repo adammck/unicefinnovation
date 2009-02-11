@@ -28,7 +28,7 @@
 		</ul>
 		<p>A group of interested people, starting in UNICEF’s Division of Communication, but expanding to other areas within and outside UNICEF started thinking about what this would mean for children around the world and began exploring different ways to address this challenge.</p>
 		<h2>UNICEF</h2>
-		<p>The UNICEF Innovation Team sits in the Youth Section of the Department of Communications in the New York Headquarters of UNICEF.</p>
+		<p>The UNICEF Innovation Team sits in the Youth Section of the Division of Communications in the New York Headquarters of UNICEF.</p>
 		<h2>Open Source and Creative Commons</h2>
 		<p>All of the computer code we write is free and open source.  We want to encourage anyone around the world customize our projects to fit their needs, to localize our products for their region, or just use the software to solve problems they have. The majority of the code is licensed under the AGPL or GPL.  Much of the content created on our sites is licensed under Creative Commons.  Providing the code for free allows it serve the widest audience, even a dollar liscening fee can be prohibitive.</p>
 	</div>
