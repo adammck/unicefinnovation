@@ -57,8 +57,8 @@
 		</ul>
 		<h2>In the News</h2>
 		<ul class="news">
-			<li><a href="http://dvice.com/archives/2008/08/unicefs_bee_wil.php">Dvice</a></li>
-			<li><a href="http://www.unicef.org/emerg/index_45259.html">UNICEF</a></li>
+			<li><a href="http://dvice.com/archives/2008/08/unicefs_bee_wil.php">UNICEF's "Bee" will provide an impressive array of communications, anywhere</a></li>
+			<li><a href="http://www.unicef.org/emerg/index_45259.html">‘Bee’ system prototypes represent the future of connectivity in emergencies</a></li>
 		</ul>
 		<h2>Partners</h2>
 		<ul>
