@@ -331,7 +331,17 @@ body {
 			clear: both;
 			height: 0;
 		}
+	
+	#content form div {
+		padding-bottom: 0.5em;
+	}
 
+		#content form label {
+			display: block;
+			float: left;
+			width: 7em;
+			margin-top: 0.25em;
+		}
 
 
 
