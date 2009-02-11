@@ -14,13 +14,13 @@
 			"auth"     => true,
 		));
 		
-		$to = "adam.mckaig@gmail.com";
+		$to = $smtp_to;
 		$subject = "Mail from UNICEF Innovation";
 		$name_field = $_POST["name"];
 		$email_field = $_POST["email"];
 		$message = $_POST["message"];
 		
-		$body = "From: $name_field\nE-Mail: $email_field\n\nMessage:\n$message";
+		$body = "From: $name_field\nE-Mail: $email_field\n\n$message";
 		$mail->send($to, array("From" => $smtp_from, "Subject" => $subject), $body);
 ?>
 <div id="content">
