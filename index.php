@@ -11,7 +11,7 @@
 	<ul id="product-links">
 		<li class="mobile">
 			<h3><a href="/mobile-and-sms.php">Mobile &amp; SMS</a></h3>
-			<p><strong>RapidSMS</strong>: Collecting data, coordinating logistics, enhancing communication, (with mobile phones).</p>
+			<p><strong>RapidSMS</strong>: Collecting data, coordinating logistics, enhancing communication.</p>
 		</li>
 		<li class="bee">
 			<h3><a href="/rugged-computing.php">Rugged Computing</a></h3>
@@ -33,7 +33,7 @@
 		<div class="popout">
 			<h2 class="first">About UNICEF</h2>
 			<p>UNICEF is on the ground in over 150 countries and territories to help children survive and thrive, from early childhood through adolescence.  The world's largest provider of vaccines for developing countries, UNICEF supports child health and nutrition, good water and sanitation, quality basic education for all boys and girls, and the protection of children from violence, exploitation, and AIDS. UNICEF is funded entirely by the voluntary contributions of individuals, businesses, foundations and governments.</p>
-			<p class="more">For more information on UNICEF, please go to <a href="http://unicef.org">unicef.org</a></p>
+			<p class="more">For more information on UNICEF, please go to <a href="http://www.unicef.org">unicef.org</a></p>
 		</div>
 		
 		<h2>News &amp; Press</h2>

@@ -136,7 +136,13 @@ body {
     	height: 250px;
 		}
 		
-			body.mobile-and-sms #statement {
+		body.rugged-computing #intro {
+    	background: #325a1c url("../images/intros/rugged-computing.jpg") no-repeat;
+    	height: 249px;
+		}
+		
+			body.mobile-and-sms #statement,
+			body.rugged-computing #statement {
 				width: 50%; }
 		
 		#nav-links {
@@ -187,15 +193,17 @@ body {
       	
       	/* some pages have graphical headers */
       	body.products #statement h1,
-      	body.mobile-and-sms #statement h1 {
+      	body.mobile-and-sms #statement h1,
+      	body.rugged-computing #statement h1 {
       		height: 25px;
       		overflow: hidden;
       		text-indent: -9999px;
       		background-repeat: no-repeat;
       	}
       	
-      	body.products       #statement h1 { background-image: url("../images/our-products.png"); }
-      	body.mobile-and-sms #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
+      	body.products         #statement h1 { background-image: url("../images/our-products.png"); }
+      	body.mobile-and-sms   #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
+      	body.rugged-computing #statement h1 { background-image: url("../images/rugged-computing.png"); height: 34px; }
       
       #statement p {
         font-size: 125%;
@@ -358,8 +366,16 @@ body {
 	
 	/* space out paragraphs a little more
 	 * in the content than the sidebar */
-	#content p { margin: 1em 0; }
-	#sidebar p { margin: 0.5em 0; }
+	#content p {
+		margin: 1em 0; }
+	
+	#content li {
+		margin-left: 1.5em; }
+	
+	#sidebar p {
+		font-size: 90%;
+		margin: 0.5em 0;
+	}
 	
 	#content h3 {
 		font-weight: bold;
