@@ -157,6 +157,11 @@ body {
 			 * center them horizontally */
 			text-align: center;
 		}
+			
+			/* apparently, IE6 adds a little extra
+			 * padding at the top... so remove it! */
+			* html #nav-links {
+				padding-top: 0; }
 		
 			#nav-links li {
 				display: inline;
