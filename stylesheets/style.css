@@ -132,10 +132,10 @@ body {
     height: 250px;
 	}
 	
-		body.mobile-and-sms    #intro { background: #6b462e url("../images/intros/mobile-and-sms.png")   no-repeat; }
-		body.rugged-computing  #intro { background: #325a1c url("../images/intros/rugged-computing.jpg") no-repeat; }
-		body.wiki              #intro { background: #b0482b url("../images/intros/wiki.jpg")             no-repeat; }
-		body.social-networking #intro { background: #b0482b url("../images/intros/social-networking.jpg")             no-repeat; }
+		body.mobile-and-sms    #intro { background: #6b462e url("../images/intros/mobile-and-sms.png")    no-repeat; }
+		body.rugged-computing  #intro { background: #325a1c url("../images/intros/rugged-computing.jpg")  no-repeat; }
+		body.wiki              #intro { background: #b0482b url("../images/intros/wiki.jpg")              no-repeat; }
+		body.social-networking #intro { background: #b0482b url("../images/intros/social-networking.jpg") no-repeat; }
 		
 			body.mobile-and-sms #statement,
 			body.rugged-computing #statement,
@@ -194,18 +194,21 @@ body {
       	body.mobile-and-sms #statement h1,
       	body.rugged-computing #statement h1,
       	body.wiki #statement h1,
-      	body.about #statement h1 {
+      	body.about #statement h1,
+      	body.social-networking #statement h1 {
       		height: 34px;
       		overflow: hidden;
       		text-indent: -9999px;
       		background-repeat: no-repeat;
+      		background-position: 0 50%;
       	}
       	
-      	body.products         #statement h1 { background-image: url("../images/our-products.png"); }
-      	body.mobile-and-sms   #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
-      	body.rugged-computing #statement h1 { background-image: url("../images/rugged-computing.png"); }
-      	body.wiki             #statement h1 { background-image: url("../images/wiki.png"); }
-      	body.about            #statement h1 { background-image: url("../images/our-mission.png"); }
+      	body.products          #statement h1 { background-image: url("../images/our-products.png"); }
+      	body.mobile-and-sms    #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
+      	body.rugged-computing  #statement h1 { background-image: url("../images/rugged-computing.png"); }
+      	body.wiki              #statement h1 { background-image: url("../images/wiki.png"); }
+      	body.about             #statement h1 { background-image: url("../images/our-mission.png"); }
+      	body.social-networking #statement h1 { background-image: url("../images/social-networking.png"); }
       
       #statement p {
         font-size: 125%;
