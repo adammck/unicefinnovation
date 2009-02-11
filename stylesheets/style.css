@@ -191,7 +191,8 @@ body {
       	body.products #statement h1,
       	body.mobile-and-sms #statement h1,
       	body.rugged-computing #statement h1,
-      	body.wiki #statement h1 {
+      	body.wiki #statement h1,
+      	body.about #statement h1 {
       		height: 34px;
       		overflow: hidden;
       		text-indent: -9999px;
@@ -202,6 +203,7 @@ body {
       	body.mobile-and-sms   #statement h1 { background-image: url("../images/mobile-and-sms.png"); }
       	body.rugged-computing #statement h1 { background-image: url("../images/rugged-computing.png"); }
       	body.wiki             #statement h1 { background-image: url("../images/wiki.png"); }
+      	body.about            #statement h1 { background-image: url("../images/our-mission.png"); }
       
       #statement p {
         font-size: 125%;
