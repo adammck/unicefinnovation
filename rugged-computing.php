@@ -43,8 +43,8 @@
 		<h2>Learn</h2>
 		<ul class="learn">
 			<li>
-				<h4>GSM<span> (</span>Global System for Mobile communications<span>, originally from </span>Groupe Spécial Mobile<span>)</span></h4>
-				<p>is the most popular standard for mobile phones in the world. Its promoter, the GSM Association, estimates that 80% of the global mobile market uses the standard. Its ubiquity makes international roaming very common between mobile phone operators, enabling subscribers to use their phones in many parts of the world. GSM differs from its predecessors in that both signaling and speech channels are digital, and thus is considered a second generation (2G) mobile phone system.</p>
+				<h4>GSMs</h4>
+				<p>Global System for Mobile communications(GSM) is the most popular standard for mobile phones in the world. Its promoter, the GSM Association, estimates that 80% of the global mobile market uses the standard. Its ubiquity makes international roaming very common between mobile phone operators, enabling subscribers to use their phones in many parts of the world. GSM differs from its predecessors in that both signaling and speech channels are digital, and thus is considered a second generation (2G) mobile phone system.</p>
 			</li>
 			<li>
 				<h4>Rugged<span> or </span>Ruggedized</h4>

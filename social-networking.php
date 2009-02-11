@@ -40,11 +40,11 @@
 		<h2>Learn</h2>
 		<ul class="learn">
 			<li>
-				<h4>Social Network:</h4>
+				<h4>Social Network</h4>
 				<p>A social network is a website composed of individuals or organizations tied together by an interdependency, such as values, visions, ideas, financial exchange, friendship, kinship, dislike, conflict or trade.</p>
 			</li>
 			<li>
-				<h4>Free Software:</h4>
+				<h4>Free Software</h4>
 				<p>Free Software, or <em>software libre</em>, is software that can be used, studied, modified, and redistributed with little or no restriction.</p>
 			</li>
 		</ul>
