@@ -38,7 +38,7 @@
 		<ul class="links">
 			<li>
 				<h4><a href="http://sourceforge.net/projects/rapidsms/">Download RapidSMS</a></h4>
-				<p>Download the sourcecode for RapidSMS from sourceforges.</p>
+				<p>Download the sourcecode for RapidSMS from sourceforge.</p>
 			</li>
 			<li>
 				<h4><a href="http://mobilehacking.org">MobileHacking.org</a></h4>
