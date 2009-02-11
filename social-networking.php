@@ -6,6 +6,14 @@
 		<li class="active"><a href="/social-networking.php">Social Networking</a></li>
 		<li><a href="/wiki.php">Wiki</a></li>
 	</ul>
+	<div id="statement">
+		<h1>YouthNet</h1>
+		<p>
+			YouthNet is UNICEF's social network for young activists. It allows young
+			people to form connections, work together, and create opportunities even
+			in low connectivity environments.
+		</p>
+	</div>
 </div>
 <div id="content" class="with-sidebar">
 	<div class="nest">
