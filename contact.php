@@ -25,7 +25,10 @@
 ?>
 <div id="content">
 	<div class="nest">
-		Your message was sent
+<?
+		if (PEAR::isError($mail)) { echo("<p>".$mail->getMessage()."</p>"); }
+		else { echo("<p>Message successfully sent!</p>"); }
+?>
 	</div>
 </div>
 <?php
