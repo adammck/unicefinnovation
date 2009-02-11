@@ -132,13 +132,15 @@ body {
     height: 250px;
 	}
 	
-		body.mobile-and-sms   #intro { background: #6b462e url("../images/intros/mobile-and-sms.png")   no-repeat; }
-		body.rugged-computing #intro { background: #325a1c url("../images/intros/rugged-computing.jpg") no-repeat; }
-		body.wiki             #intro { background: #325a1c url("../images/intros/wiki.jpg")             no-repeat; }
+		body.mobile-and-sms    #intro { background: #6b462e url("../images/intros/mobile-and-sms.png")   no-repeat; }
+		body.rugged-computing  #intro { background: #325a1c url("../images/intros/rugged-computing.jpg") no-repeat; }
+		body.wiki              #intro { background: #b0482b url("../images/intros/wiki.jpg")             no-repeat; }
+		body.social-networking #intro { background: #b0482b url("../images/intros/social-networking.jpg")             no-repeat; }
 		
 			body.mobile-and-sms #statement,
 			body.rugged-computing #statement,
-			body.wiki #statement {
+			body.wiki #statement,
+			body.social-networking #statement {
 				width: 50%; }
 		
 		#nav-links {
