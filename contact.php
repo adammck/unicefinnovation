@@ -21,7 +21,7 @@
 		$message = $_POST["message"];
 		
 		$body = "From: $name_field\nE-Mail: $email_field\n\nMessage:\n$message";
-		$mail->send($to, array("From" => $from, "Subject" => $subject), $body);
+		$mail->send($to, array("From" => $smtp_from, "Subject" => $subject), $body);
 ?>
 <div id="content">
 	<div class="nest">
