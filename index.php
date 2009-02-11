@@ -61,7 +61,7 @@
 			</li>
 		</div>
 		
-		<?php print file_get_contents("/tmp/feeds/nyt"); ?>
+		<?php print file_get_contents("/tmp/feeds/web4devblog"); ?>
 	</div>
 </div>
 <div id="sidebar">
