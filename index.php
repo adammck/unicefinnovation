@@ -99,7 +99,7 @@
 			<li><a href="http://www.amd.com">AMD</a></li>
 			<li><a href="http://www.via.com.tw">VIA</a></li>			
 			<li><a href="http://riseuplabs.org/crabgrass/">Riseup</a></li>
-			<li><a href="http://www.icouldbe.org/">icouldbe</a></li>			
+			<li><a href="http://www.nyu.edu/">NYU</a></li>			
 			<li><a href="http://www.mediawiki.org">MediaWiki</a></li>
 			<li><a href="http://www.kennisnet.nl/">Kennisnet</a></li>
 			<span class="float-hack"></span>
