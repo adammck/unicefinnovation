@@ -14,7 +14,7 @@
 				</p>
 				
 				<p>
-					<a href="/contact.php">Contact</a>        &bull;
+					<a href="/contact.php">Contact</a>  &bull;
 					<a href="/tou.php">Terms of Use</a> &bull;
 					<a href="/privacy.php">Privacy</a>
 				</p>

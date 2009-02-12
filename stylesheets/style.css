@@ -1,8 +1,15 @@
-/*   
-Theme Name: UNICEF Innovations
-Author: Meghana Khandekar, Adam Mckaig
-Version: 0.1
-*/
+/* UNICEF Innovation Base
+ * vim:set noet:
+ * --
+ * This is the UNICEFinnovation.org stylesheet.
+ * There are many others like it,
+ * But this one is mine.
+ * --
+ * (c) UNICEF 2009
+ * by Meghana Khandehar
+ *    and Adam Mckaig
+ */
+
 
 * {
 	margin: 0;
@@ -83,7 +90,6 @@ body {
 	
 		#nav-tabs {
 			position: absolute;
-			display: block;
 			margin-right: 1em;
 			right: 0;
 			
@@ -92,11 +98,6 @@ body {
 			 * white, giving the illusion of it being "in front" */
 			margin-top: -3em;
 			top: 111px;
-			
-			/* left border is disabled in the child LIs
-			 * (to ensure a single pixel boundary), so
-			 * add it here (for the first "tab") */
-			border-left: 1px solid #06a1db;
 		}
 		
 			#nav-tabs li {
@@ -107,6 +108,13 @@ body {
 				background: #4fa6cc url("../images/tab-off-bg.png") repeat-x;
 				border-left: 0;
 			}
+			
+				/* left border is disabled in the child LIs
+				 * (to ensure a single pixel boundary), so
+				 * add it here (for the first "tab"), which
+				 * is actually the last in the html */
+				#nav-tabs li.home {
+					border-left: 1px solid #06a1db; }
 			
 				#nav-tabs li.active {
 					border-bottom-color: #fff;
@@ -125,13 +133,15 @@ body {
 					}
 					
 					#nav-tabs li.active a {
-						color: #009fdb;
-					}
+						color: #009fdb; }
 
 	#intro {
-		background: #2c2f53;
+		/* use a background image, to dodge
+		 * the weird mismatch with the blue
+		 * background of icons in safari */
+		background: #2c2f53 url("../images/statement-bg.png");
 		position: relative;
-		overflow: auto;
+		/*overflow: auto;*/
     height: 250px;
 	}
 		
@@ -161,19 +171,10 @@ body {
 			text-align: center;
 		}
 			
-			/* apparently, IE6 adds a little extra
-			 * padding at the top... so remove it! */
-			* html #nav-links {
-				padding-top: 0; }
-		
 			#nav-links li {
 				display: inline;
 				margin-right: 1em;
 				padding-top: 0.5em;
-				
-				/* the border is always present, so
-				 * the active link isn't misaligned */
-				border-top: 0.5em solid #fff;
 			}
 				
 				/* remove the margin on the last item,
@@ -189,8 +190,10 @@ body {
 					color: #68c6eb;
 				}
 				
+				/* add a large block to the top of
+				 * the active link to highlight it */
 				#nav-links li.active {
-					border-top-color: #009fdb; }
+					border-top: 0.5em solid #009fdb; }
 					
 					#nav-links li.active a {
 						color: #009fdb; }
@@ -353,7 +356,7 @@ body {
 #content,
 #sidebar {
 	color: #666;
-	overflow: auto;
+	/*overflow: auto;*/
 	
 	/* the last element will only have a 1em, margin-bottom,
 	 * so we need a bit of extra padding here to compensate */
@@ -430,9 +433,15 @@ body {
 	#sidebar p , #sidebar li {
 		line-height: 1.6; }
 
-	/* space out the real
-	 * text content more */
-	#sidebar li {padding-top:.3em;}
+	#sidebar li {
+	
+		/* space out the real
+		 * text content more */
+		padding-top:.3em;
+		
+		/* remove bullets */
+		display: block;
+	}
 	
 		/* a short snip of additional information,
 		 * which isn't as important as most paragraphs */
@@ -534,7 +543,6 @@ body {
 			padding-top: 1.25em; /* 1 @ 100% */
 			display: block;
 			font-size: 80%;
-			overflow: auto;
 		}
 			
 			#sidebar ul.events h4,

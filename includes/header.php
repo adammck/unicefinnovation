@@ -6,6 +6,7 @@
 		<title>UNICEF Innovation</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+		<!--[if IE]><link rel="stylesheet" href="/stylesheets/exploder.css" type="text/css" /><![endif]-->
 	</head>
 	<?php
 		/* body class is the filename minus / and .php,
@@ -21,9 +22,9 @@
 				</div>
 				<ul id="nav-tabs">
 					<?php if(!isset($tab)) $tab = ""; // dodge "undefined variable" warning ?>
-					<li<?php if($tab=="about")    { ?> class="active"<?php } ?>><a href="/about.php">About</a></li>
-					<li<?php if($tab=="products") { ?> class="active"<?php } ?>><a href="/products.php">Products</a></li>
-					<li<?php if($tab=="home")     { ?> class="active"<?php } ?>><a href="/">Home</a></li>
+					<li class="about<?php if($tab=="about") { ?> active<?php } ?>"><a href="/about.php">About</a></li>
+					<li class="products<?php if($tab=="products") { ?> active<?php } ?>"><a href="/products.php">Products</a></li>
+					<li class="home<?php if($tab=="home") { ?> active<?php } ?>"><a href="/">Home</a></li>
 				</ul>
 			</div>
 <!-- header ends -->

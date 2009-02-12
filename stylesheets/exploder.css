@@ -1,0 +1,19 @@
+/* UNICEF Innovation Internet Explorer Fixes
+ * vim:set noet:
+ * --
+ * Almost everything works without hackery,
+ * but the few remaining problems are worked
+ * around here. This should be included with
+ * a conditional comment.
+ * --
+ * (c) UNICEF 2009
+ * by Meghana Khandehar
+ *    and Adam Mckaig
+ */
+
+
+/* IE6 and 7adds a little extra
+ * padding above the border-top
+ * of active nav items */
+#nav-links {
+	padding-top: 0; }
