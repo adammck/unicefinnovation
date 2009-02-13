@@ -61,8 +61,16 @@
 			</li>
 		</div>
 		
-		<h2>Web4dev Event Blog</h2>
-		<?php print file_get_contents("feeds/web4dev-blog.html"); ?>
+		<div class="feeds">
+			<div class="blog">
+				<h2>Web4dev Event Blog</h2>
+				<?php print file_get_contents("feeds/web4dev-blog.html"); ?>
+			</div>
+			<div class="twitter">
+				<h2>Web4dev on Twitter</h2>
+				<?php print file_get_contents("feeds/web4dev-twitter.html"); ?>
+			</div>
+		</div>
 	</div>
 </div>
 <div id="sidebar">

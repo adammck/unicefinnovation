@@ -532,6 +532,18 @@ body {
 			font-size: 80%;
 			color: #ccc;
 		}
+		
+		/* half-width front page feeds */
+		#content .feeds .blog,
+		#content .feeds .twitter {
+			float: left;
+			padding: 0;
+			width: 50%;
+		}
+			
+			/* insert a hacky gap between the columns */
+			#content .feeds .blog    .feed, #content .feeds .blog    h2 { padding-right: 1em; }
+			#content .feeds .twitter .feed, #content .feeds .twitter h2 { padding-left:  1em; }
 	
 	
 	/* compensate for p-t gap
