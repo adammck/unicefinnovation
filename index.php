@@ -75,14 +75,20 @@
 </div>
 <div id="sidebar">
 	<div class="nest">
-		<h2>Upcoming Events</h2>
+		<h2>Events</h2>
 		<p>Come see us present at:</p>
 		<ul class="events">
 			<li>
-				<a href="http://web4dev.org"><img src="/images/buttons/web4dev.png" width="143" /></a>
-				<h4><a href="http://web4dev.org">Web4Dev</a></h4>
-				<p class="date">February 11-13, 2009</p>
+				<a href="http://nyc.openeverything.us/"><img src="/images/buttons/OpenEverything.png" width="143" /></a>
+				<h4><a href="http://nyc.openeverything.us/">Open Everything</a></h4>
+				<p class="date">April 18, 2009</p>
 				<p class="where">New York, NY</p>
+			</li>
+			<li>
+				<a href="http://www.chi2009.org"><img src="/images/buttons/chi09.png" width="143" /></a>
+				<h4><a href="http://www.chi2009.org">Chi 2009</a></h4>
+				<p class="date">April 4-9, 2009</p>
+				<p class="where">Boston, MA</p>
 			</li>
 			<li>
 				<a href="http://sxsw.com"><img src="/images/buttons/sxsw.png" width="143" /></a>
@@ -91,10 +97,10 @@
 				<p class="where">Austin, TX</p>
 			</li>
 			<li>
-				<a href="http://www.chi2009.org"><img src="/images/buttons/chi09.png" width="143" /></a>
-				<h4><a href="http://www.chi2009.org">Chi 2009</a></h4>
-				<p class="date">April 4-9, 2009</p>
-				<p class="where">Boston, MA</p>
+				<a href="http://web4dev.org"><img src="/images/buttons/web4dev.png" width="143" /></a>
+				<h4><a href="http://web4dev.org">Web4Dev</a></h4>
+				<p class="date">February 11-13, 2009</p>
+				<p class="where">New York, NY</p>
 			</li>
 		</ul>
 		<h2>Partners</h2>
