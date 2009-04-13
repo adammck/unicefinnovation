@@ -78,6 +78,15 @@
 		<h2>Events</h2>
 		<p>Come see us present at:</p>
 		<ul class="events">
+
+
+
+			<li>
+				<a href="http://en.oreilly.com/oscon2009/public/schedule/detail/8335"><img src="/images/buttons/OriellyOscon.png" width="143" /></a>
+				<h4><a href="http://en.oreilly.com/oscon2009/public/schedule/detail/8335">Oreilly OSCON 2009</a></h4>
+				<p class="date">July 20-24, 2009</p>
+				<p class="where">San Jose, CA</p>
+			</li>
 			<li>
 				<a href="http://nyc.openeverything.us/"><img src="/images/buttons/OpenEverything.png" width="143" /></a>
 				<h4><a href="http://nyc.openeverything.us/">Open Everything</a></h4>
